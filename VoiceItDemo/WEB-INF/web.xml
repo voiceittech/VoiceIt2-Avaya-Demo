@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--
+This XML descriptor is automatically generated and managed by the
+application development environment.  While manual updates to this 
+file may be preserved, it is best to manage this file through the application development environment tool.
+
+Copyright 2004-2011 Avaya Inc.
+--><!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app id="WebApp_ID">
+    <context-param>
+        <param-name>sage.startlanguage</param-name>
+        <param-value>english</param-value>
+        <description>The starting language for the application.</description>
+    </context-param>
+    <context-param>
+        <param-name>sage.ic.throwexceptions</param-name>
+        <param-value>true</param-value>
+        <description>IC Throw Runtime Exception on Error{true|false}</description>
+    </context-param>
+    <context-param>
+        <param-name>sage.cti.autoinvoke.callinfo</param-name>
+        <param-value>true</param-value>
+        <description>CTI Auto invoke CallInfo upon app start{true|false}</description>
+    </context-param>
+    <context-param>
+        <param-name>runtime-ASR</param-name>
+        <param-value>SRGS-SISR</param-value>
+        <description>Runtime ASR {SRGS-Literals|SRGS-SISR|Nuance OSR|IBM|...}</description>
+    </context-param>
+    <context-param>
+        <param-name>runtime-SSML</param-name>
+        <param-value>true</param-value>
+        <description>Runtime SSML Generation {true|false} - "true" enables SSML generation, "false" disables.</description>
+    </context-param>
+    <context-param>
+        <param-name>runtime-nature</param-name>
+        <param-value>speech</param-value>
+        <description>Application nature, speech or message</description>
+    </context-param>
+    <context-param>
+        <param-name>runtime-Platform</param-name>
+        <param-value>Desktop</param-value>
+        <description>Runtime Platform {Desktop|Voice Portal|Experience Portal|Other|IR|MPS}</description>
+    </context-param>
+    <context-param>
+        <param-name>runtime-VXML-Compatibility</param-name>
+        <param-value>2.1</param-value>
+        <description>2.1 + IVVR, 2.1 Allows VXML 2.1 extensions, 2.0 Uses VXML 2.0 Only</description>
+    </context-param>
+    <context-param>
+        <param-name>runtime-DTMF-Native</param-name>
+        <param-value>LOCAL_SRGS_SISR</param-value>
+        <description>(NATIVE|LOCAL_SRGS_SISR|LOCAL_SRGS_LITERALS, NATIVE means DTMF Grammars are in native asr format.</description>
+    </context-param>
+    <context-param>
+        <param-name>CollectionSeparator</param-name>
+        <param-value>|</param-value>
+        <description>Collection Separator Char</description>
+    </context-param>
+    <context-param>
+        <param-name>grammar-caching</param-name>
+        <param-value>none</param-value>
+        <description>Grammar caching mode, none=no caching, default=system default or property setting</description>
+    </context-param>
+    
+    
+    <context-param>
+        <param-name>com.voiceit_tech.developerId</param-name>
+        <param-value>PLEASE CHANGE TO A VALID DEVELOPER ID</param-value>
+        <description>DO NOT MODIFY</description>
+    </context-param>
+    <context-param>
+        <param-name>com.voiceit_tech.defaultLanguage</param-name>
+        <param-value>English(US)</param-value>
+        <description>DO NOT MODIFY</description>
+    </context-param>
+    <servlet id="avayadefaultdisconnecthandler-servlet">
+        <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
+        <servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
+    </servlet>
+    <servlet id="avayadefaultexithandler-servlet">
+        <servlet-name>AvayaDefaultExitHandler</servlet-name>
+        <servlet-class>com.avaya.sce.runtime.DefaultExit</servlet-class>
+    </servlet>
+    <servlet id="avayasessiontermination-servlet">
+        <servlet-name>AvayaSessionTerminationServlet</servlet-name>
+        <servlet-class>com.avaya.sce.runtime.AvayaSessionTerminationServlet</servlet-class>
+    </servlet>
+    <servlet id="avayareturnerrorhandler-servlet">
+        <servlet-name>AvayaReturnErrorHandler</servlet-name>
+        <servlet-class>com.avaya.sce.runtime.ReturnErrorHandlerServlet</servlet-class>
+    </servlet>
+    <servlet id="avayareturnerrorthrow-servlet">
+        <servlet-name>AvayaReturnErrorThrow</servlet-name>
+        <servlet-class>com.avaya.sce.runtime.ReturnErrorThrowServlet</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_1">
+        <servlet-name>AppRoot</servlet-name>
+        <servlet-class>flow.AppRoot</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_475">
+        <servlet-name>GetEnrollments</servlet-name>
+        <servlet-class>flow.GetEnrollments</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_547">
+        <servlet-name>CheckReturnEnrollmentsComplete</servlet-name>
+        <servlet-class>flow.CheckReturnEnrollmentsComplete</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_616">
+        <servlet-name>General_Error</servlet-name>
+        <servlet-class>flow.General_Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_622">
+        <servlet-name>Greeting_Return_Caller</servlet-name>
+        <servlet-class>flow.Greeting_Return_Caller</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_465">
+        <servlet-name>Authentication_Success</servlet-name>
+        <servlet-class>flow.Authentication_Success</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_553">
+        <servlet-name>CreateUser</servlet-name>
+        <servlet-class>flow.CreateUser</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_566">
+        <servlet-name>Authentication_Failed</servlet-name>
+        <servlet-class>flow.Authentication_Failed</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_626">
+        <servlet-name>Authenticate_Passphrase</servlet-name>
+        <servlet-class>flow.Authenticate_Passphrase</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_635">
+        <servlet-name>Clear_Enrollments_Success</servlet-name>
+        <servlet-class>flow.Clear_Enrollments_Success</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_572">
+        <servlet-name>DeleteAccount</servlet-name>
+        <servlet-class>flow.DeleteAccount</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_516">
+        <servlet-name>Enroll_Passphrase</servlet-name>
+        <servlet-class>flow.Enroll_Passphrase</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_512">
+        <servlet-name>Delete_Account_Success</servlet-name>
+        <servlet-class>flow.Delete_Account_Success</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_582">
+        <servlet-name>Return</servlet-name>
+        <servlet-class>flow.Return</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_586">
+        <servlet-name>Enroll_Status</servlet-name>
+        <servlet-class>flow.Enroll_Status</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_503">
+        <servlet-name>AuthenticateCaller</servlet-name>
+        <servlet-class>flow.AuthenticateCaller</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_523">
+        <servlet-name>Enroll_Return_Caller</servlet-name>
+        <servlet-class>flow.Enroll_Return_Caller</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_593">
+        <servlet-name>Greeting_New_Caller</servlet-name>
+        <servlet-class>flow.Greeting_New_Caller</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_530">
+        <servlet-name>ClearEnrollments</servlet-name>
+        <servlet-class>flow.ClearEnrollments</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_541">
+        <servlet-name>CheckEnrollmentsComplete</servlet-name>
+        <servlet-class>flow.CheckEnrollmentsComplete</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_600">
+        <servlet-name>InitApp</servlet-name>
+        <servlet-class>flow.InitApp</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_483">
+        <servlet-name>CreateEnrollment</servlet-name>
+        <servlet-class>flow.CreateEnrollment</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_607">
+        <servlet-name>GetUser</servlet-name>
+        <servlet-class>flow.GetUser</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_0">
+        <servlet-name>Start</servlet-name>
+        <servlet-class>flow.Start</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_728">
+        <servlet-name>UpdateEnrollmentInfo</servlet-name>
+        <servlet-class>flow.UpdateEnrollmentInfo</servlet-class>
+    </servlet>
+    <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
+        <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
+        <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="avayadefaultexithandler-servletmapping">
+        <servlet-name>AvayaDefaultExitHandler</servlet-name>
+        <url-pattern>/AvayaDefaultExitHandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="avayasessiontermination-servletmapping">
+        <servlet-name>AvayaSessionTerminationServlet</servlet-name>
+        <url-pattern>/AvayaSessionTerminationServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="avayareturnerrorhandler-servletmapping">
+        <servlet-name>AvayaReturnErrorHandler</servlet-name>
+        <url-pattern>/AvayaReturnErrorHandler</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="avayareturnerrorthrow-servletmapping">
+        <servlet-name>AvayaReturnErrorThrow</servlet-name>
+        <url-pattern>/AvayaReturnErrorThrow</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_1">
+        <servlet-name>AppRoot</servlet-name>
+        <url-pattern>/AppRoot</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_475">
+        <servlet-name>GetEnrollments</servlet-name>
+        <url-pattern>/GetEnrollments</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_547">
+        <servlet-name>CheckReturnEnrollmentsComplete</servlet-name>
+        <url-pattern>/CheckReturnEnrollmentsComplete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_616">
+        <servlet-name>General_Error</servlet-name>
+        <url-pattern>/General_Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_622">
+        <servlet-name>Greeting_Return_Caller</servlet-name>
+        <url-pattern>/Greeting_Return_Caller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_465">
+        <servlet-name>Authentication_Success</servlet-name>
+        <url-pattern>/Authentication_Success</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_553">
+        <servlet-name>CreateUser</servlet-name>
+        <url-pattern>/CreateUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_566">
+        <servlet-name>Authentication_Failed</servlet-name>
+        <url-pattern>/Authentication_Failed</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_626">
+        <servlet-name>Authenticate_Passphrase</servlet-name>
+        <url-pattern>/Authenticate_Passphrase</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_635">
+        <servlet-name>Clear_Enrollments_Success</servlet-name>
+        <url-pattern>/Clear_Enrollments_Success</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_572">
+        <servlet-name>DeleteAccount</servlet-name>
+        <url-pattern>/DeleteAccount</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_516">
+        <servlet-name>Enroll_Passphrase</servlet-name>
+        <url-pattern>/Enroll_Passphrase</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_512">
+        <servlet-name>Delete_Account_Success</servlet-name>
+        <url-pattern>/Delete_Account_Success</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_582">
+        <servlet-name>Return</servlet-name>
+        <url-pattern>/Return</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_586">
+        <servlet-name>Enroll_Status</servlet-name>
+        <url-pattern>/Enroll_Status</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_503">
+        <servlet-name>AuthenticateCaller</servlet-name>
+        <url-pattern>/AuthenticateCaller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_523">
+        <servlet-name>Enroll_Return_Caller</servlet-name>
+        <url-pattern>/Enroll_Return_Caller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_593">
+        <servlet-name>Greeting_New_Caller</servlet-name>
+        <url-pattern>/Greeting_New_Caller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_530">
+        <servlet-name>ClearEnrollments</servlet-name>
+        <url-pattern>/ClearEnrollments</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_541">
+        <servlet-name>CheckEnrollmentsComplete</servlet-name>
+        <url-pattern>/CheckEnrollmentsComplete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_600">
+        <servlet-name>InitApp</servlet-name>
+        <url-pattern>/InitApp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_483">
+        <servlet-name>CreateEnrollment</servlet-name>
+        <url-pattern>/CreateEnrollment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_607">
+        <servlet-name>GetUser</servlet-name>
+        <url-pattern>/GetUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_0">
+        <servlet-name>Start</servlet-name>
+        <url-pattern>/Start</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_728">
+        <servlet-name>UpdateEnrollmentInfo</servlet-name>
+        <url-pattern>/UpdateEnrollmentInfo</url-pattern>
+    </servlet-mapping>
+</web-app>
