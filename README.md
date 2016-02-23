@@ -1,4 +1,4 @@
-# voiceit-avaya-demo
+# A Demo using the VoiceIt Avaya Orchestration Designer Plugin
 
 A sample Avaya Orchestration Designer 7.x application that does demonstrate the functionality of voice biometric authentication by
 using the VoiceIt&trade; Plug-in for Orchestration Designer.
