@@ -10,7 +10,7 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/scert-07.01.08.04.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-07.01.08.04.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/datedFileAppender-1.0.2.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/VoiceItRT-07.00.09.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/VoiceItRT-07.00.08.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>
