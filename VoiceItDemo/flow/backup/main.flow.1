@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="711" package="flow" version="5.0">
+    <ApplicationFlow nextObjectId="740" package="flow" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.AppRoot" id="1" version="3.1">
                 <Property name="Name" value="AppRoot"/>
@@ -44,7 +44,7 @@
                                 <FlowItem class="com.voiceit_tech.od.plugins.getEnrollments" id="697" version="1.2">
                                     <ItemProperties>
                                         <Property name="Name" value="VoiceItEnrollments"/>
-                                        <Property name="voiceit.getenrollments.email.varname" value="demoEmail"/>
+                                        <Property name="voiceit.getenrollments.email.varname" value="demoUserId"/>
                                         <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.getEnrollments"/>
                                         <Property name="voiceit.getenrollments.password.varname" value="demoPassword"/>
                                     </ItemProperties>
@@ -70,18 +70,20 @@
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="707" version="1.2">
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="740" version="1.2">
                             <ItemProperties>
-                                <Property name="type" value="collection.reset"/>
-                                <Property name="destVarId" value="VoiceItEnrollments"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.VarCollIterator" id="708" version="1.2">
-                            <ItemProperties>
-                                <Property name="varid" value="VoiceItEnrollments"/>
+                                <Property name="RightConstOperand" value="0"/>
+                                <Property name="Operator" value="&gt;"/>
+                                <Property name="LeftOperandID" value="enrollmentCount"/>
                             </ItemProperties>
                             <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="707" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="type" value="collection.reset"/>
+                                        <Property name="destVarId" value="VoiceItEnrollments"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="710" version="1.2">
                                     <ItemProperties>
                                         <Property name="type" value="collection.next"/>
@@ -89,12 +91,19 @@
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="709" version="1.2">
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.VarCollIterator" id="708" version="1.2">
                                     <ItemProperties>
-                                        <Property name="trace.varId" value="VoiceItEnrollments"/>
-                                        <Property name="trace.fieldId" value="EnrollmentID"/>
+                                        <Property name="varid" value="VoiceItEnrollments"/>
                                     </ItemProperties>
-                                    <ChildItems/>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="709" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="trace.varId" value="VoiceItEnrollments"/>
+                                                <Property name="trace.fieldId" value="EnrollmentID"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
                                 </FlowItem>
                             </ChildItems>
                         </FlowItem>
@@ -265,39 +274,6 @@
                             <ItemProperties>
                                 <Property name="Name" value="LocalVariables"/>
                             </ItemProperties>
-                            <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SimpleVariable" id="556" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="Name" value="firstName"/>
-                                        <Property name="value" value="First "/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SimpleVariable" id="557" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="Name" value="lastName"/>
-                                        <Property name="value" value="Last "/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                            </ChildItems>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="558" version="1.2">
-                            <ItemProperties>
-                                <Property name="sourceVarId" value="session"/>
-                                <Property name="type" value="concatenate"/>
-                                <Property name="sourceFieldId" value="ani"/>
-                                <Property name="destVarId" value="firstName(L)"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="559" version="1.2">
-                            <ItemProperties>
-                                <Property name="sourceVarId" value="session"/>
-                                <Property name="type" value="concatenate"/>
-                                <Property name="sourceFieldId" value="ani"/>
-                                <Property name="destVarId" value="lastName(L)"/>
-                            </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.TryBlock" id="560" version="1.2">
@@ -312,7 +288,7 @@
                                         <Property name="voiceit.createuser.phone1.varname" value="session"/>
                                         <Property name="voiceit.createuser.firstname.varname" value="firstName(L)"/>
                                         <Property name="voiceit.createuser.phone1.varfield" value="ani"/>
-                                        <Property name="voiceit.createuser.email.varname" value="demoEmail"/>
+                                        <Property name="voiceit.createuser.email.varname" value="demoUserId"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -426,7 +402,7 @@
                 <Property name="Name" value="Clear_Enrollments_Success"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1104"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="276"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="492"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="636" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -476,7 +452,7 @@
                                         <Property name="Name" value="VoiceItDeleteUser"/>
                                         <Property name="voiceit.deleteuser.password.varname" value="demoPassword"/>
                                         <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.deleteUser"/>
-                                        <Property name="voiceit.deleteuser.email.varname" value="demoEmail"/>
+                                        <Property name="voiceit.deleteuser.email.varname" value="demoUserId"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -614,7 +590,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="584" version="3.1">
                 <Property name="ReferencedNodeID" value="516"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1105"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="544"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="760"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Bookmark" id="501" version="3.1">
                 <Property name="Name" value="Returning User"/>
@@ -685,7 +661,7 @@
                                         <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.authentication"/>
                                         <Property name="voiceit.authenticate.file.varname" value="Authenticate_Passphrase"/>
                                         <Property name="voiceit.authenticate.accuracypasses.const" value="4"/>
-                                        <Property name="voiceit.authenticate.email.varname" value="demoEmail"/>
+                                        <Property name="voiceit.authenticate.email.varname" value="demoUserId"/>
                                         <Property name="voiceit.authenticate.password.varname" value="demoPassword"/>
                                         <Property name="voiceit.authenticate.accuracypassincrement.const" value="2"/>
                                         <Property name="voiceit.authenticate.accuracy.const" value="5"/>
@@ -725,7 +701,7 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="527" version="3.1">
-                <Property name="ReferencedNodeID" value="530"/>
+                <Property name="ReferencedNodeID" value="728"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="852"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="876"/>
             </FlowNode>
@@ -795,6 +771,61 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="728" version="3.1">
+                <Property name="Name" value="UpdateEnrollmentInfo"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="1056"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="60"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="729" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="730" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LabelItem" id="731" version="1.2">
+                            <ItemProperties>
+                                <Property name="comment" value="We update the enrollment count because sometimes the authentication routine will create a new enrollment as well."/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.TryBlock" id="732" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems>
+                                <FlowItem class="com.voiceit_tech.od.plugins.getEnrollments" id="733" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="EnrollmentRefresh"/>
+                                        <Property name="voiceit.getenrollments.email.varname" value="demoUserId"/>
+                                        <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.getEnrollments"/>
+                                        <Property name="voiceit.getenrollments.password.varname" value="demoPassword"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.CatchBlock" id="734" version="1.2">
+                                    <ItemProperties/>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="735" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="EnrollmentRefresh"/>
+                                <Property name="type" value="size"/>
+                                <Property name="destVarId" value="enrollmentCount"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="736" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="530"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Bookmark" id="592" version="3.1">
                 <Property name="Name" value="Delete User"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1212"/>
@@ -818,12 +849,12 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="599" version="3.1">
                 <Property name="ReferencedNodeID" value="616"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1056"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="276"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="492"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="530" version="3.1">
                 <Property name="Name" value="ClearEnrollments"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="1056"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="60"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="276"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="531" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -836,13 +867,20 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="533" version="1.2">
                             <ItemProperties>
                                 <Property name="type" value="collection.reset"/>
-                                <Property name="destVarId" value="VoiceItEnrollments"/>
+                                <Property name="destVarId" value="EnrollmentRefresh"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="711" version="1.2">
+                            <ItemProperties>
+                                <Property name="type" value="collection.next"/>
+                                <Property name="destVarId" value="EnrollmentRefresh"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.VarCollIterator" id="534" version="1.2">
                             <ItemProperties>
-                                <Property name="varid" value="VoiceItEnrollments"/>
+                                <Property name="varid" value="EnrollmentRefresh"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.TryBlock" id="535" version="1.2">
@@ -852,10 +890,10 @@
                                             <ItemProperties>
                                                 <Property name="Name" value="VoiceItDeleteEnrollment"/>
                                                 <Property name="voiceit.deleteenrollment.enrollmentid.varfield" value="EnrollmentID"/>
-                                                <Property name="voiceit.deleteenrollment.email.varname" value="demoEmail"/>
+                                                <Property name="voiceit.deleteenrollment.email.varname" value="demoUserId"/>
                                                 <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.deleteEnrollment"/>
                                                 <Property name="voiceit.deleteenrollment.password.varname" value="demoPassword"/>
-                                                <Property name="voiceit.deleteenrollment.enrollmentid.varname" value="VoiceItEnrollments"/>
+                                                <Property name="voiceit.deleteenrollment.enrollmentid.varname" value="EnrollmentRefresh"/>
                                             </ItemProperties>
                                             <ChildItems/>
                                         </FlowItem>
@@ -883,7 +921,7 @@
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="705" version="1.2">
                                     <ItemProperties>
-                                        <Property name="sourceVarId" value="VoiceItEnrollments"/>
+                                        <Property name="sourceVarId" value="Enroll_Passphrase"/>
                                         <Property name="type" value="size"/>
                                         <Property name="destVarId" value="enrollmentCount"/>
                                     </ItemProperties>
@@ -895,14 +933,15 @@
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="711" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="type" value="collection.next"/>
-                                        <Property name="destVarId" value="VoiceItEnrollments"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
                             </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="738" version="1.2">
+                            <ItemProperties>
+                                <Property name="sourceVarId" value="EnrollmentRefresh"/>
+                                <Property name="type" value="collection.empty"/>
+                                <Property name="destVarId" value="VoiceItEnrollments"/>
+                            </ItemProperties>
+                            <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="540" version="1.2">
                             <ItemProperties>
@@ -976,15 +1015,15 @@
                                 <Property name="sourceVarId" value="session"/>
                                 <Property name="type" value="assign"/>
                                 <Property name="sourceFieldId" value="ani"/>
-                                <Property name="destVarId" value="demoEmail"/>
+                                <Property name="destVarId" value="demoUserId"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="604" version="1.2">
                             <ItemProperties>
-                                <Property name="sourceVarId" value="DEMO_EMAIL_PROVIDER"/>
+                                <Property name="sourceVarId" value="DEMO_USERID_PROVIDER"/>
                                 <Property name="type" value="concatenate"/>
-                                <Property name="destVarId" value="demoEmail"/>
+                                <Property name="destVarId" value="demoUserId"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
@@ -1070,7 +1109,7 @@
                                         <Property name="voiceit.createenrollment.file.varfield" value="value"/>
                                         <Property name="voiceit.createenrollment.password.varname" value="demoPassword"/>
                                         <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.createEnrollment"/>
-                                        <Property name="voiceit.createenrollment.email.varname" value="demoEmail"/>
+                                        <Property name="voiceit.createenrollment.email.varname" value="demoUserId"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -1161,7 +1200,7 @@
                                     <ItemProperties>
                                         <Property name="Name" value="VoiceItUser"/>
                                         <Property name="voiceit.getuser.password.varname" value="demoPassword"/>
-                                        <Property name="voiceit.getuser.email.varname" value="demoEmail"/>
+                                        <Property name="voiceit.getuser.email.varname" value="demoUserId"/>
                                         <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.getUser"/>
                                     </ItemProperties>
                                     <ChildItems/>
@@ -1407,6 +1446,12 @@
                 <TargetNode id="581"/>
                 <Property name="Connection.SourceObjectID" value="676"/>
                 <Property name="Connection.TargetObjectID" value="581"/>
+            </NodeConnection>
+            <NodeConnection id="737" version="1.2">
+                <SourceNode id="728"/>
+                <TargetNode id="530"/>
+                <Property name="Connection.SourceObjectID" value="736"/>
+                <Property name="Connection.TargetObjectID" value="530"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>

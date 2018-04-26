@@ -229,9 +229,9 @@
             <policy name="valuesettable" value="false"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="DEMO_EMAIL_PROVIDER" owner="" type="" value="@avayabioauth.example.com" version="1.0"/>
-    <variable factoryID="" name="demoEmail" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="DEMO_USERID_PROVIDER" owner="" type="" value="AvayaBioAuthDemo" version="1.0"/>
     <variable factoryID="" name="demoPassword" owner="" type="" value="" version="1.0"/>
+    <variable factoryID="" name="demoUserId" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="Enroll_Passphrase:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.ui.record" value="" version="1.0">
         <editpolicies>
             <policy name="appendable" value="false"/>
@@ -1036,47 +1036,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceItUser:FirstName" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getUserVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
     <variable factoryID="" name="VoiceItUser:IsSuccess" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getUserVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="VoiceItUser:LastName" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getUserVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="VoiceItUser:Phone1" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getUserVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="VoiceItUser:Phone2" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getUserVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="appendable" value="false"/>
-            <policy name="deleteable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="VoiceItUser:Phone3" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="appendable" value="false"/>
             <policy name="deleteable" value="false"/>

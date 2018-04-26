@@ -64,16 +64,14 @@ Copyright 2004-2011 Avaya Inc.
     </context-param>
     
     
-    
-    
     <context-param>
         <param-name>com.voiceit_tech.developerId</param-name>
-        <param-value>PLEASE CHANGE TO A VALID DEVELOPER ID</param-value>
+        <param-value>PLEASE SET A VALID VOICEIT DEVELOPER ID</param-value>
         <description>DO NOT MODIFY</description>
     </context-param>
     <context-param>
         <param-name>com.voiceit_tech.defaultLanguage</param-name>
-        <param-value>English(US)</param-value>
+        <param-value/>
         <description>DO NOT MODIFY</description>
     </context-param>
     <servlet id="avayadefaultdisconnecthandler-servlet">
