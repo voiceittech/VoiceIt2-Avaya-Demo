@@ -17,10 +17,7 @@
             <propertymap/>
             <nestedpropertystore>
                 <propertystore id="voiceit_tech" version="1.0">
-                    <propertymap>
-                        <property name="developerid" value="PLEASE CHANGE TO A VALID DEVELOPER ID" version="1.0"/>
-                        <property name="deflang" value="English(US)" version="1.0"/>
-                    </propertymap>
+                    <propertymap/>
                     <nestedpropertystore/>
                 </propertystore>
             </nestedpropertystore>
