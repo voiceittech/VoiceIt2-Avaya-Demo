@@ -10,7 +10,7 @@ their user account from the system.
 
 ## Pre-Requisites
 
-- VoiceIt Account -- [VoiceIt Developer Registration](https://siv.voiceprintportal.com/getDeveloperID.jsp)
+- VoiceIt Account -- [VoiceIt Developer Registration](https://voiceit.io/signup)
 - Avaya&reg; Orchestration Designer 7.x configured with Java 7 or greater
 
 ## Installing the plugin
