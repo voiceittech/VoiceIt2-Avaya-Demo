@@ -1,1 +1,9 @@
 *.DS_Store*
+*.class
+work
+data/prompts/cache
+data/temp
+data/log
+flow/backup
+*.jar
+!WEB-INF/lib/**/*.jar
