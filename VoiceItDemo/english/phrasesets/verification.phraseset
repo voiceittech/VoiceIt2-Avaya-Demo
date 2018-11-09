@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="verification" version="1.0">
+    <phrase version="1.0">
+        <displayname>verify-0000</displayname>
+        <talent/>
+        <phrasetext>We are about to begin the voice verification process. When you are ready, you will be told a phrase to repeat. After you have spoken the phrase, we'll find out if VoiceIt has successfully verified you.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>verify-0000.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>verify-0001</displayname>
+        <talent/>
+        <phrasetext>When you're ready to begin the verification process, press any key.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>verify-0001.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>verify-0002</displayname>
+        <talent/>
+        <phrasetext>You're voice was successfully analysed and you have been verified as the person associated with this telephone number.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>verify-0002.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>verify-0003</displayname>
+        <talent/>
+        <phrasetext>Your voice has been successfully analysed and you have failed verification.&#13;
+If you are the person this telephone number is associated with, a failure can sometimes happen if you're speaking too softly or not clearly enough.&#13;
+If you are not the person associated with this telephone number, the verification process is successful.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments>Emphasis on the word "not" in the last sentence.</comments>
+        <audiofile>verify-0003.wav</audiofile>
+    </phrase>
+</phraseset>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<module category="Demo Application" descriptorversion="1.0" entrypoint="VoiceItDemo/Start" forcesubdialogcall="false" frameworkversion="07.01.08.04" iconlarge="icons/defaultapplicationlg.gif" iconsmall="icons/defaultapplicationsm.gif" modifyInputs="false" modifyOutputs="false" nature="com.avaya.sce.core.speechnature" outputmultipart="false" paramasnamelist="false" provider="VoiceIt Technologies, LLC" submitmethod="get" version="1.0.0" webname="VoiceItDemo">
-    <description/>
+<module category="VoiceIt Demonstration" descriptorversion="1.0" entrypoint="VoiceItDemo/Start" forcesubdialogcall="false" frameworkversion="07.00.18.01" iconlarge="icons/defaultapplicationlg.gif" iconsmall="icons/defaultapplicationsm.gif" modifyInputs="false" modifyOutputs="false" nature="com.avaya.sce.core.speechnature" outputmultipart="false" paramasnamelist="false" provider="Top Cat Technology Solutions, LLC" submitmethod="get" version="2.0.0" webname="VoiceItDemo">
+    <description>Avaya Orchestration Designer 7.x application that demonstrates the VoiceIt Technologies Biometric services integration.</description>
     <language name="english" root="en-us"/>
     <dependencies/>
 </module>

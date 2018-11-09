@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="record" version="1.0">
+    <phrase version="1.0">
+        <displayname>record-0000</displayname>
+        <talent/>
+        <phrasetext>After the tone, please say the phrase.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>record-0000.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>record-0001</displayname>
+        <talent/>
+        <phrasetext>I'm sorry, but I didn't catch that. Let's try this again.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>record-0001.wav</audiofile>
+    </phrase>
+</phraseset>
