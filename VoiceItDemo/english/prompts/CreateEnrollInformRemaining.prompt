@@ -34,12 +34,29 @@
                                 </Segment>
                             </ChildItems>
                         </Segment>
+                        <Segment class="com.avaya.sce.prompts.internal.segment.ElseIfStatement" type="ElseIf">
+                            <Properties>
+                                <Property name="LeftVar" value="enrollmentsRemaining"/>
+                                <Property name="Value" value="2"/>
+                                <Property name="RightOperandType" value="Constant"/>
+                                <Property name="Compare" value="="/>
+                            </Properties>
+                            <ChildItems>
+                                <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
+                                    <Properties>
+                                        <Property name="Phrase" value="createenroll-1002"/>
+                                        <Property name="Phraseset" value="createenrollment"/>
+                                    </Properties>
+                                    <ChildItems/>
+                                </Segment>
+                            </ChildItems>
+                        </Segment>
                         <Segment class="com.avaya.sce.prompts.internal.segment.ElseStatement" type="Else">
                             <Properties/>
                             <ChildItems>
                                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                                     <Properties>
-                                        <Property name="Phrase" value="createenroll-1002"/>
+                                        <Property name="Phrase" value="createenroll-1003"/>
                                         <Property name="Phraseset" value="createenrollment"/>
                                     </Properties>
                                     <ChildItems/>

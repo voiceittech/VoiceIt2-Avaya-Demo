@@ -3,7 +3,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="WEB-INF/src"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/scert-07.00.18.01.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/VoiceIt2RT-02.00.21.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/topcattech-utils.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
@@ -11,5 +10,6 @@
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-07.00.18.01.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/VoiceIt2RT-02.00.27.jar" sourcepath="C:/Users/michael/Documents/TCTS/SourceCode/VoiceIT/7.0.1.0804/avaya/workspace/avaya/com.voiceit_tech.od.rt/src"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

@@ -84,4 +84,13 @@ If you would like to improve the accuracy or your voice biometrics, and perform 
         <comments/>
         <audiofile>createenroll-0006.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-1003</displayname>
+        <talent/>
+        <phrasetext>There are still three enrollments</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-1003.wav</audiofile>
+    </phrase>
 </phraseset>

@@ -269,10 +269,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.GetEnrollments</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_createuser_71">
-        <servlet-name>createuser-GetPhraseToSpeak</servlet-name>
-        <servlet-class>flow.subflow.createuser.GetPhraseToSpeak</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_createuser_79">
         <servlet-name>createuser-Greeting</servlet-name>
         <servlet-class>flow.subflow.createuser.Greeting</servlet-class>
@@ -393,6 +390,15 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>voiceverification-InformSuccess</servlet-name>
         <servlet-class>flow.subflow.voiceverification.InformSuccess</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_125">
+        <servlet-name>createenrollment-CheckPhrase</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.CheckPhrase</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_121">
+        <servlet-name>createenrollment-GetPhraseToSpeak</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.GetPhraseToSpeak</servlet-class>
+    </servlet>
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -581,10 +587,7 @@ Copyright 2004-2011 Avaya Inc.
         <url-pattern>/GetEnrollments</url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_71">
-        <servlet-name>createuser-GetPhraseToSpeak</servlet-name>
-        <url-pattern>/createuser-GetPhraseToSpeak</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_createuser_79">
         <servlet-name>createuser-Greeting</servlet-name>
         <url-pattern>/createuser-Greeting</url-pattern>
@@ -702,6 +705,15 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>voiceverification-InformSuccess</servlet-name>
         <url-pattern>/voiceverification-InformSuccess</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_125">
+        <servlet-name>createenrollment-CheckPhrase</servlet-name>
+        <url-pattern>/createenrollment-CheckPhrase</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_121">
+        <servlet-name>createenrollment-GetPhraseToSpeak</servlet-name>
+        <url-pattern>/createenrollment-GetPhraseToSpeak</url-pattern>
+    </servlet-mapping>
+    
     
     
     

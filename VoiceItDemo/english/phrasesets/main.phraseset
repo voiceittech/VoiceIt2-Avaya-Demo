@@ -45,4 +45,13 @@
         <comments/>
         <audiofile>main-0012.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>main-background</displayname>
+        <talent/>
+        <phrasetext/>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>clock-tick-short.wav</audiofile>
+    </phrase>
 </phraseset>
