@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar xmlns="http://www.w3.org/2001/06/grammar" mode="dtmf" root="anykeydtmf" version="1.0" xml:lang="en-us">
+    <rule id="anykeydtmf" scope="public">
+        <ruleref uri="#Column0"/>
+        <tag>cxtag=Column0.atag;Column0=Column0.atag;</tag>
+    </rule>
+    <rule id="Column0" scope="private">
+        <tag>atag=''</tag>
+        <one-of>
+            <item>0<tag>atag+='anykey'</tag>
+            </item>
+            <item>1<tag>atag+='anykey'</tag>
+            </item>
+            <item>2<tag>atag+='anykey'</tag>
+            </item>
+            <item>3<tag>atag+='anykey'</tag>
+            </item>
+            <item>4<tag>atag+='anykey'</tag>
+            </item>
+            <item>5<tag>atag+='anykey'</tag>
+            </item>
+            <item>6<tag>atag+='anykey'</tag>
+            </item>
+            <item>7<tag>atag+='anykey'</tag>
+            </item>
+            <item>8<tag>atag+='anykey'</tag>
+            </item>
+            <item>9<tag>atag+='anykey'</tag>
+            </item>
+            <item>*<tag>atag+='anykey'</tag>
+            </item>
+            <item>#<tag>atag+='anykey'</tag>
+            </item>
+        </one-of>
+    </rule>
+</grammar>

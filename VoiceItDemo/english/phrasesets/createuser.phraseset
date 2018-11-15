@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="createuser" version="1.0">
+    <phrase version="1.0">
+        <displayname>createuser-0000</displayname>
+        <talent/>
+        <phrasetext>It appears this is the first time you're calling. Let's create a VoiceIt profile for you and begin the enrollment process.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createuser-0000.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createuser-0001</displayname>
+        <talent/>
+        <phrasetext>A VoiceIt profile has been created and associated with this telephone number. Future calls from this number will automatically associate with this profile.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createuser-0001.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createuser-0002</displayname>
+        <talent/>
+        <phrasetext>Now that we have a profile, the next step is to complete the enrollment process. Let's do that now.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createuser-0002.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createuser-0010</displayname>
+        <talent/>
+        <phrasetext>We were unable to create a VoiceIt profile.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createuser-0010.wav</audiofile>
+    </phrase>
+</phraseset>

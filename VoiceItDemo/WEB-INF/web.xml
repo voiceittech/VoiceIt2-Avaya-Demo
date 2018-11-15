@@ -7,6 +7,7 @@ file may be preserved, it is best to manage this file through the application de
 Copyright 2004-2011 Avaya Inc.
 --><!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
 <web-app id="WebApp_ID">
+	<display-name>VoiceIt API 2.0 Demo</display-name>
     <context-param>
         <param-name>sage.startlanguage</param-name>
         <param-value>english</param-value>
@@ -24,7 +25,7 @@ Copyright 2004-2011 Avaya Inc.
     </context-param>
     <context-param>
         <param-name>runtime-ASR</param-name>
-        <param-value>SRGS-SISR</param-value>
+        <param-value>Desktop Microsoft Speech SAPI</param-value>
         <description>Runtime ASR {SRGS-Literals|SRGS-SISR|Nuance OSR|IBM|...}</description>
     </context-param>
     <context-param>
@@ -49,7 +50,7 @@ Copyright 2004-2011 Avaya Inc.
     </context-param>
     <context-param>
         <param-name>runtime-DTMF-Native</param-name>
-        <param-value>LOCAL_SRGS_SISR</param-value>
+        <param-value>LOCAL_SRGS_LITERALS</param-value>
         <description>(NATIVE|LOCAL_SRGS_SISR|LOCAL_SRGS_LITERALS, NATIVE means DTMF Grammars are in native asr format.</description>
     </context-param>
     <context-param>
@@ -63,17 +64,24 @@ Copyright 2004-2011 Avaya Inc.
         <description>Grammar caching mode, none=no caching, default=system default or property setting</description>
     </context-param>
     
-    
-    
+    <context-param>
+    	<param-name>tech.topcat.voiceit_tech.demo.PROPERTY_FILE</param-name>
+    	<param-value>profilemap.properties</param-value>
+    </context-param>
     
     <context-param>
-        <param-name>com.voiceit_tech.developerId</param-name>
-        <param-value>PLEASE ENTER A VALID DEVELOPER ID</param-value>
+        <param-name>com.voiceit_tech.api2.defaultLanguage</param-name>
+        <param-value>English (United States)</param-value>
         <description>DO NOT MODIFY</description>
     </context-param>
     <context-param>
-        <param-name>com.voiceit_tech.defaultLanguage</param-name>
-        <param-value>- No Text Detection</param-value>
+        <param-name>com.voiceit_tech.api2.apiKey</param-name>
+        <param-value>SET TO KNOWN VOICEIT API KEY</param-value>
+        <description>DO NOT MODIFY</description>
+    </context-param>
+    <context-param>
+        <param-name>com.voiceit_tech.api2.apiToken</param-name>
+        <param-value>SET TO KNOWN VOICEIT API TOKEN</param-value>
         <description>DO NOT MODIFY</description>
     </context-param>
     <servlet id="avayadefaultdisconnecthandler-servlet">
@@ -100,102 +108,299 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>AppRoot</servlet-name>
         <servlet-class>flow.AppRoot</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_475">
-        <servlet-name>GetEnrollments</servlet-name>
-        <servlet-class>flow.GetEnrollments</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_547">
-        <servlet-name>CheckReturnEnrollmentsComplete</servlet-name>
-        <servlet-class>flow.CheckReturnEnrollmentsComplete</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_616">
-        <servlet-name>General_Error</servlet-name>
-        <servlet-class>flow.General_Error</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_622">
-        <servlet-name>Greeting_Return_Caller</servlet-name>
-        <servlet-class>flow.Greeting_Return_Caller</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_465">
-        <servlet-name>Authentication_Success</servlet-name>
-        <servlet-class>flow.Authentication_Success</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_553">
-        <servlet-name>CreateUser</servlet-name>
-        <servlet-class>flow.CreateUser</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_566">
-        <servlet-name>Authentication_Failed</servlet-name>
-        <servlet-class>flow.Authentication_Failed</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_626">
-        <servlet-name>Authenticate_Passphrase</servlet-name>
-        <servlet-class>flow.Authenticate_Passphrase</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_635">
-        <servlet-name>Clear_Enrollments_Success</servlet-name>
-        <servlet-class>flow.Clear_Enrollments_Success</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_572">
-        <servlet-name>DeleteAccount</servlet-name>
-        <servlet-class>flow.DeleteAccount</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_516">
-        <servlet-name>Enroll_Passphrase</servlet-name>
-        <servlet-class>flow.Enroll_Passphrase</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_512">
-        <servlet-name>Delete_Account_Success</servlet-name>
-        <servlet-class>flow.Delete_Account_Success</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_582">
-        <servlet-name>Return</servlet-name>
-        <servlet-class>flow.Return</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_586">
-        <servlet-name>Enroll_Status</servlet-name>
-        <servlet-class>flow.Enroll_Status</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_503">
-        <servlet-name>AuthenticateCaller</servlet-name>
-        <servlet-class>flow.AuthenticateCaller</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_523">
-        <servlet-name>Enroll_Return_Caller</servlet-name>
-        <servlet-class>flow.Enroll_Return_Caller</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_593">
-        <servlet-name>Greeting_New_Caller</servlet-name>
-        <servlet-class>flow.Greeting_New_Caller</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_530">
-        <servlet-name>ClearEnrollments</servlet-name>
-        <servlet-class>flow.ClearEnrollments</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_541">
-        <servlet-name>CheckEnrollmentsComplete</servlet-name>
-        <servlet-class>flow.CheckEnrollmentsComplete</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_600">
-        <servlet-name>InitApp</servlet-name>
-        <servlet-class>flow.InitApp</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_483">
-        <servlet-name>CreateEnrollment</servlet-name>
-        <servlet-class>flow.CreateEnrollment</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_607">
-        <servlet-name>GetUser</servlet-name>
-        <servlet-class>flow.GetUser</servlet-class>
+    
+    <servlet id="SAGE-callflow-servlet_main_8">
+        <servlet-name>EndOfApplication</servlet-name>
+        <servlet-class>flow.EndOfApplication</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_0">
         <servlet-name>Start</servlet-name>
         <servlet-class>flow.Start</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_728">
-        <servlet-name>UpdateEnrollmentInfo</servlet-name>
-        <servlet-class>flow.UpdateEnrollmentInfo</servlet-class>
+    
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_getphrases_1">
+        <servlet-name>getphrases-Begin</servlet-name>
+        <servlet-class>flow.subflow.getphrases.Begin</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_getphrases_38">
+        <servlet-name>getphrases-VoiceItAPI</servlet-name>
+        <servlet-class>flow.subflow.getphrases.VoiceItAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getphrases_57">
+        <servlet-name>getphrases-Error</servlet-name>
+        <servlet-class>flow.subflow.getphrases.Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getphrases_56">
+        <servlet-name>getphrases-Default</servlet-name>
+        <servlet-class>flow.subflow.getphrases.Default</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createuser_1">
+        <servlet-name>createuser-Begin</servlet-name>
+        <servlet-class>flow.subflow.createuser.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createuser_38">
+        <servlet-name>createuser-VoiceItAPI</servlet-name>
+        <servlet-class>flow.subflow.createuser.VoiceItAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createuser_58">
+        <servlet-name>createuser-Error</servlet-name>
+        <servlet-class>flow.subflow.createuser.Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createuser_56">
+        <servlet-name>createuser-Default</servlet-name>
+        <servlet-class>flow.subflow.createuser.Default</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_recording_1">
+        <servlet-name>recording-Begin</servlet-name>
+        <servlet-class>flow.subflow.recording.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_recording_4">
+        <servlet-name>recording-Recording</servlet-name>
+        <servlet-class>flow.subflow.recording.Recording</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_recording_11">
+        <servlet-name>recording-Default</servlet-name>
+        <servlet-class>flow.subflow.recording.Default</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_recording_15">
+        <servlet-name>recording-ReplaySpokenPhrase</servlet-name>
+        <servlet-class>flow.subflow.recording.ReplaySpokenPhrase</servlet-class>
+    </servlet>
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_checkexists_34">
+        <servlet-name>checkexists-NonExist</servlet-name>
+        <servlet-class>flow.subflow.checkexists.NonExist</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_checkexists_1">
+        <servlet-name>checkexists-Begin</servlet-name>
+        <servlet-class>flow.subflow.checkexists.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_checkexists_32">
+        <servlet-name>checkexists-Exists</servlet-name>
+        <servlet-class>flow.subflow.checkexists.Exists</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_checkexists_18">
+        <servlet-name>checkexists-VoiceItAPI</servlet-name>
+        <servlet-class>flow.subflow.checkexists.VoiceItAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_1">
+        <servlet-name>getenrollments-Begin</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_4">
+        <servlet-name>getenrollments-VoiceItAPI</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.VoiceItAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_21">
+        <servlet-name>getenrollments-Default</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.Default</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_20">
+        <servlet-name>getenrollments-Incomplete</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.Incomplete</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_1">
+        <servlet-name>createenrollment-Begin</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.Begin</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_19">
+        <servlet-name>createenrollment-Error</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_18">
+        <servlet-name>createenrollment-Default</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.Default</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_4">
+        <servlet-name>createenrollment-VoiceItAPI</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.VoiceItAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_voiceverification_1">
+        <servlet-name>voiceverification-Begin</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.Begin</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_voiceverification_25">
+        <servlet-name>voiceverification-VoiceItAPI</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.VoiceItAPI</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_voiceverification_24">
+        <servlet-name>voiceverification-Default</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.Default</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_getphrases_74">
+        <servlet-name>getphrases-ChosePhrase</servlet-name>
+        <servlet-class>flow.subflow.getphrases.ChosePhrase</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_63">
+        <servlet-name>UseridLookup</servlet-name>
+        <servlet-class>flow.UseridLookup</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createuser_66">
+        <servlet-name>createuser-SaveProfileMap</servlet-name>
+        <servlet-class>flow.subflow.createuser.SaveProfileMap</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_68">
+        <servlet-name>CheckNewCaller</servlet-name>
+        <servlet-class>flow.CheckNewCaller</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_76">
+        <servlet-name>CreateUser</servlet-name>
+        <servlet-class>flow.CreateUser</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_checkexists_38">
+        <servlet-name>checkexists-Error</servlet-name>
+        <servlet-class>flow.subflow.checkexists.Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_checkexists_40">
+        <servlet-name>checkexists-CheckExists</servlet-name>
+        <servlet-class>flow.subflow.checkexists.CheckExists</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_85">
+        <servlet-name>VerifyExists</servlet-name>
+        <servlet-class>flow.VerifyExists</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_99">
+        <servlet-name>GetEnrollments</servlet-name>
+        <servlet-class>flow.GetEnrollments</servlet-class>
+    </servlet>
+    
+    
+    <servlet id="SAGE-callflow-servlet_createuser_79">
+        <servlet-name>createuser-Greeting</servlet-name>
+        <servlet-class>flow.subflow.createuser.Greeting</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_26">
+        <servlet-name>getenrollments-DetermineUsablePhrase</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.DetermineUsablePhrase</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_119">
+        <servlet-name>InformAPIError</servlet-name>
+        <servlet-class>flow.InformAPIError</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_123">
+        <servlet-name>SayGoodbye</servlet-name>
+        <servlet-class>flow.SayGoodbye</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_48">
+        <servlet-name>getenrollments-Error</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_134">
+        <servlet-name>VerifyCaller</servlet-name>
+        <servlet-class>flow.VerifyCaller</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_voiceverification_43">
+        <servlet-name>voiceverification-GetRecording</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.GetRecording</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_voiceverification_53">
+        <servlet-name>voiceverification-Error</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.Error</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_148">
+        <servlet-name>CreateEnrollment</servlet-name>
+        <servlet-class>flow.CreateEnrollment</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_23">
+        <servlet-name>createenrollment-SetCheckComplete</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.SetCheckComplete</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_27">
+        <servlet-name>createenrollment-GetRecording</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.GetRecording</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_50">
+        <servlet-name>createenrollment-EnrollmentsComplete</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.EnrollmentsComplete</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_createenrollment_71">
+        <servlet-name>createenrollment-InformFailure</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.InformFailure</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_65">
+        <servlet-name>createenrollment-InformSuccess</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.InformSuccess</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_recording_24">
+        <servlet-name>recording-NoInput</servlet-name>
+        <servlet-class>flow.subflow.recording.NoInput</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_172">
+        <servlet-name>Greeting</servlet-name>
+        <servlet-class>flow.Greeting</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createuser_85">
+        <servlet-name>createuser-InformSuccess</servlet-name>
+        <servlet-class>flow.subflow.createuser.InformSuccess</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createuser_95">
+        <servlet-name>createuser-InformFailure</servlet-name>
+        <servlet-class>flow.subflow.createuser.InformFailure</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_178">
+        <servlet-name>CheckCreateSuccess</servlet-name>
+        <servlet-class>flow.CheckCreateSuccess</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_51">
+        <servlet-name>getenrollments-InformComplete</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.InformComplete</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_57">
+        <servlet-name>getenrollments-InformIncomplete</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.InformIncomplete</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_188">
+        <servlet-name>InformTryAgain</servlet-name>
+        <servlet-class>flow.InformTryAgain</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_96">
+        <servlet-name>createenrollment-PromptWhenReady</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.PromptWhenReady</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_78">
+        <servlet-name>createenrollment-Greeting</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.Greeting</servlet-class>
+    </servlet>
+    
+    
+    <servlet id="SAGE-callflow-servlet_voiceverification_55">
+        <servlet-name>voiceverification-Greeting</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.Greeting</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_voiceverification_59">
+        <servlet-name>voiceverification-PromptWhenReady</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.PromptWhenReady</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_voiceverification_79">
+        <servlet-name>voiceverification-InformFailure</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.InformFailure</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_voiceverification_75">
+        <servlet-name>voiceverification-InformSuccess</servlet-name>
+        <servlet-class>flow.subflow.voiceverification.InformSuccess</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_125">
+        <servlet-name>createenrollment-CheckPhrase</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.CheckPhrase</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_121">
+        <servlet-name>createenrollment-GetPhraseToSpeak</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.GetPhraseToSpeak</servlet-class>
+    </servlet>
+    
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -220,100 +425,295 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>AppRoot</servlet-name>
         <url-pattern>/AppRoot</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_475">
-        <servlet-name>GetEnrollments</servlet-name>
-        <url-pattern>/GetEnrollments</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_547">
-        <servlet-name>CheckReturnEnrollmentsComplete</servlet-name>
-        <url-pattern>/CheckReturnEnrollmentsComplete</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_616">
-        <servlet-name>General_Error</servlet-name>
-        <url-pattern>/General_Error</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_622">
-        <servlet-name>Greeting_Return_Caller</servlet-name>
-        <url-pattern>/Greeting_Return_Caller</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_465">
-        <servlet-name>Authentication_Success</servlet-name>
-        <url-pattern>/Authentication_Success</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_553">
-        <servlet-name>CreateUser</servlet-name>
-        <url-pattern>/CreateUser</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_566">
-        <servlet-name>Authentication_Failed</servlet-name>
-        <url-pattern>/Authentication_Failed</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_626">
-        <servlet-name>Authenticate_Passphrase</servlet-name>
-        <url-pattern>/Authenticate_Passphrase</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_635">
-        <servlet-name>Clear_Enrollments_Success</servlet-name>
-        <url-pattern>/Clear_Enrollments_Success</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_572">
-        <servlet-name>DeleteAccount</servlet-name>
-        <url-pattern>/DeleteAccount</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_516">
-        <servlet-name>Enroll_Passphrase</servlet-name>
-        <url-pattern>/Enroll_Passphrase</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_512">
-        <servlet-name>Delete_Account_Success</servlet-name>
-        <url-pattern>/Delete_Account_Success</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_582">
-        <servlet-name>Return</servlet-name>
-        <url-pattern>/Return</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_586">
-        <servlet-name>Enroll_Status</servlet-name>
-        <url-pattern>/Enroll_Status</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_503">
-        <servlet-name>AuthenticateCaller</servlet-name>
-        <url-pattern>/AuthenticateCaller</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_523">
-        <servlet-name>Enroll_Return_Caller</servlet-name>
-        <url-pattern>/Enroll_Return_Caller</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_593">
-        <servlet-name>Greeting_New_Caller</servlet-name>
-        <url-pattern>/Greeting_New_Caller</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_530">
-        <servlet-name>ClearEnrollments</servlet-name>
-        <url-pattern>/ClearEnrollments</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_541">
-        <servlet-name>CheckEnrollmentsComplete</servlet-name>
-        <url-pattern>/CheckEnrollmentsComplete</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_600">
-        <servlet-name>InitApp</servlet-name>
-        <url-pattern>/InitApp</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_483">
-        <servlet-name>CreateEnrollment</servlet-name>
-        <url-pattern>/CreateEnrollment</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_607">
-        <servlet-name>GetUser</servlet-name>
-        <url-pattern>/GetUser</url-pattern>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_8">
+        <servlet-name>EndOfApplication</servlet-name>
+        <url-pattern>/EndOfApplication</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_0">
         <servlet-name>Start</servlet-name>
         <url-pattern>/Start</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_728">
-        <servlet-name>UpdateEnrollmentInfo</servlet-name>
-        <url-pattern>/UpdateEnrollmentInfo</url-pattern>
+    
+    
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_1">
+        <servlet-name>getphrases-Begin</servlet-name>
+        <url-pattern>/getphrases-Begin</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_38">
+        <servlet-name>getphrases-VoiceItAPI</servlet-name>
+        <url-pattern>/getphrases-VoiceItAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_57">
+        <servlet-name>getphrases-Error</servlet-name>
+        <url-pattern>/getphrases-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_56">
+        <servlet-name>getphrases-Default</servlet-name>
+        <url-pattern>/getphrases-Default</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_1">
+        <servlet-name>createuser-Begin</servlet-name>
+        <url-pattern>/createuser-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_38">
+        <servlet-name>createuser-VoiceItAPI</servlet-name>
+        <url-pattern>/createuser-VoiceItAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_58">
+        <servlet-name>createuser-Error</servlet-name>
+        <url-pattern>/createuser-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_56">
+        <servlet-name>createuser-Default</servlet-name>
+        <url-pattern>/createuser-Default</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_recording_1">
+        <servlet-name>recording-Begin</servlet-name>
+        <url-pattern>/recording-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_recording_4">
+        <servlet-name>recording-Recording</servlet-name>
+        <url-pattern>/recording-Recording</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_recording_11">
+        <servlet-name>recording-Default</servlet-name>
+        <url-pattern>/recording-Default</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_recording_15">
+        <servlet-name>recording-ReplaySpokenPhrase</servlet-name>
+        <url-pattern>/recording-ReplaySpokenPhrase</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_34">
+        <servlet-name>checkexists-NonExist</servlet-name>
+        <url-pattern>/checkexists-NonExist</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_1">
+        <servlet-name>checkexists-Begin</servlet-name>
+        <url-pattern>/checkexists-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_32">
+        <servlet-name>checkexists-Exists</servlet-name>
+        <url-pattern>/checkexists-Exists</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_18">
+        <servlet-name>checkexists-VoiceItAPI</servlet-name>
+        <url-pattern>/checkexists-VoiceItAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_1">
+        <servlet-name>getenrollments-Begin</servlet-name>
+        <url-pattern>/getenrollments-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_4">
+        <servlet-name>getenrollments-VoiceItAPI</servlet-name>
+        <url-pattern>/getenrollments-VoiceItAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_21">
+        <servlet-name>getenrollments-Default</servlet-name>
+        <url-pattern>/getenrollments-Default</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_20">
+        <servlet-name>getenrollments-Incomplete</servlet-name>
+        <url-pattern>/getenrollments-Incomplete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_1">
+        <servlet-name>createenrollment-Begin</servlet-name>
+        <url-pattern>/createenrollment-Begin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_19">
+        <servlet-name>createenrollment-Error</servlet-name>
+        <url-pattern>/createenrollment-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_18">
+        <servlet-name>createenrollment-Default</servlet-name>
+        <url-pattern>/createenrollment-Default</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_4">
+        <servlet-name>createenrollment-VoiceItAPI</servlet-name>
+        <url-pattern>/createenrollment-VoiceItAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_1">
+        <servlet-name>voiceverification-Begin</servlet-name>
+        <url-pattern>/voiceverification-Begin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_25">
+        <servlet-name>voiceverification-VoiceItAPI</servlet-name>
+        <url-pattern>/voiceverification-VoiceItAPI</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_24">
+        <servlet-name>voiceverification-Default</servlet-name>
+        <url-pattern>/voiceverification-Default</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_74">
+        <servlet-name>getphrases-ChosePhrase</servlet-name>
+        <url-pattern>/getphrases-ChosePhrase</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_63">
+        <servlet-name>UseridLookup</servlet-name>
+        <url-pattern>/UseridLookup</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_66">
+        <servlet-name>createuser-SaveProfileMap</servlet-name>
+        <url-pattern>/createuser-SaveProfileMap</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_68">
+        <servlet-name>CheckNewCaller</servlet-name>
+        <url-pattern>/CheckNewCaller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_76">
+        <servlet-name>CreateUser</servlet-name>
+        <url-pattern>/CreateUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_38">
+        <servlet-name>checkexists-Error</servlet-name>
+        <url-pattern>/checkexists-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_40">
+        <servlet-name>checkexists-CheckExists</servlet-name>
+        <url-pattern>/checkexists-CheckExists</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_85">
+        <servlet-name>VerifyExists</servlet-name>
+        <url-pattern>/VerifyExists</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_99">
+        <servlet-name>GetEnrollments</servlet-name>
+        <url-pattern>/GetEnrollments</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_79">
+        <servlet-name>createuser-Greeting</servlet-name>
+        <url-pattern>/createuser-Greeting</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_26">
+        <servlet-name>getenrollments-DetermineUsablePhrase</servlet-name>
+        <url-pattern>/getenrollments-DetermineUsablePhrase</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_119">
+        <servlet-name>InformAPIError</servlet-name>
+        <url-pattern>/InformAPIError</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_123">
+        <servlet-name>SayGoodbye</servlet-name>
+        <url-pattern>/SayGoodbye</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_48">
+        <servlet-name>getenrollments-Error</servlet-name>
+        <url-pattern>/getenrollments-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_134">
+        <servlet-name>VerifyCaller</servlet-name>
+        <url-pattern>/VerifyCaller</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_43">
+        <servlet-name>voiceverification-GetRecording</servlet-name>
+        <url-pattern>/voiceverification-GetRecording</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_53">
+        <servlet-name>voiceverification-Error</servlet-name>
+        <url-pattern>/voiceverification-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_148">
+        <servlet-name>CreateEnrollment</servlet-name>
+        <url-pattern>/CreateEnrollment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_23">
+        <servlet-name>createenrollment-SetCheckComplete</servlet-name>
+        <url-pattern>/createenrollment-SetCheckComplete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_27">
+        <servlet-name>createenrollment-GetRecording</servlet-name>
+        <url-pattern>/createenrollment-GetRecording</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_50">
+        <servlet-name>createenrollment-EnrollmentsComplete</servlet-name>
+        <url-pattern>/createenrollment-EnrollmentsComplete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_71">
+        <servlet-name>createenrollment-InformFailure</servlet-name>
+        <url-pattern>/createenrollment-InformFailure</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_65">
+        <servlet-name>createenrollment-InformSuccess</servlet-name>
+        <url-pattern>/createenrollment-InformSuccess</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_recording_24">
+        <servlet-name>recording-NoInput</servlet-name>
+        <url-pattern>/recording-NoInput</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_172">
+        <servlet-name>Greeting</servlet-name>
+        <url-pattern>/Greeting</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_85">
+        <servlet-name>createuser-InformSuccess</servlet-name>
+        <url-pattern>/createuser-InformSuccess</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createuser_95">
+        <servlet-name>createuser-InformFailure</servlet-name>
+        <url-pattern>/createuser-InformFailure</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_178">
+        <servlet-name>CheckCreateSuccess</servlet-name>
+        <url-pattern>/CheckCreateSuccess</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_51">
+        <servlet-name>getenrollments-InformComplete</servlet-name>
+        <url-pattern>/getenrollments-InformComplete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_57">
+        <servlet-name>getenrollments-InformIncomplete</servlet-name>
+        <url-pattern>/getenrollments-InformIncomplete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_188">
+        <servlet-name>InformTryAgain</servlet-name>
+        <url-pattern>/InformTryAgain</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_96">
+        <servlet-name>createenrollment-PromptWhenReady</servlet-name>
+        <url-pattern>/createenrollment-PromptWhenReady</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_78">
+        <servlet-name>createenrollment-Greeting</servlet-name>
+        <url-pattern>/createenrollment-Greeting</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_55">
+        <servlet-name>voiceverification-Greeting</servlet-name>
+        <url-pattern>/voiceverification-Greeting</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_59">
+        <servlet-name>voiceverification-PromptWhenReady</servlet-name>
+        <url-pattern>/voiceverification-PromptWhenReady</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_79">
+        <servlet-name>voiceverification-InformFailure</servlet-name>
+        <url-pattern>/voiceverification-InformFailure</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_75">
+        <servlet-name>voiceverification-InformSuccess</servlet-name>
+        <url-pattern>/voiceverification-InformSuccess</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_125">
+        <servlet-name>createenrollment-CheckPhrase</servlet-name>
+        <url-pattern>/createenrollment-CheckPhrase</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_121">
+        <servlet-name>createenrollment-GetPhraseToSpeak</servlet-name>
+        <url-pattern>/createenrollment-GetPhraseToSpeak</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+    
 </web-app>

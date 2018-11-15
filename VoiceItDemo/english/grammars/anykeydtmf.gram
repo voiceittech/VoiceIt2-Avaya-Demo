@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<grammar>
+    <properties>
+        <mode value="dtmf"/>
+        <type value="static"/>
+    </properties>
+    <data>
+        <column id="Column0" repeat="-1" width="150">
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="0" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="1" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="2" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="3" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="4" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="5" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="6" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="7" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="8" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="9" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="*" weight="-1"/>
+            <item repeat="-1" repeat-prob="-1" tag="anykey" value="#" weight="-1"/>
+        </column>
+    </data>
+</grammar>

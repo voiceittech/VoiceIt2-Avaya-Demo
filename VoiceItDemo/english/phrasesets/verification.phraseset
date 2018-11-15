@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="verification" version="1.0">
+    <phrase version="1.0">
+        <displayname>verify-0000</displayname>
+        <talent/>
+        <phrasetext>You are about to begin the voice verification process. When prompted, please repeat the given phrase in a clear voice.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>verify-0000.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>verify-0001</displayname>
+        <talent/>
+        <phrasetext>When you're ready to begin the verification process, press any key.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>verify-0001.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>verify-0002</displayname>
+        <talent/>
+        <phrasetext>You have successfully verified.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>verify-0002.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>verify-0003</displayname>
+        <talent/>
+        <phrasetext>Verification failed, please try again.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments>Emphasis on the word "not" in the last sentence.</comments>
+        <audiofile>verify-0003.wav</audiofile>
+    </phrase>
+</phraseset>

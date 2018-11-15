@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="createenrollment" version="1.0">
+    <phrase version="1.0">
+        <displayname>createenroll-0000</displayname>
+        <talent/>
+        <phrasetext>The enrollment process analyzes your voice to create a baseline that will be used for future verifications.&#13;
+The process requires a minimum of 3 successful enrollments. Be sure to speak in a clear voice during the enrollment process.&#13;
+</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-0000.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-0001</displayname>
+        <talent/>
+        <phrasetext>When you're ready to begin the enrollment process, press any key.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-0001.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-0002</displayname>
+        <talent/>
+        <phrasetext>When you're ready to continue the enrollment process, press any key.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-0002.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-0003</displayname>
+        <talent/>
+        <phrasetext>The enrollment was successful.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-0003.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-0004</displayname>
+        <talent/>
+        <phrasetext>The enrollment was not successful. Let's try that again.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-0004.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-0005</displayname>
+        <talent/>
+        <phrasetext>That completes the enrollment process for this phrase. You can now test the verification system.&#13;
+If you would like to continue to the verification system, please press 1.&#13;
+If you would like to improve the accuracy or your voice biometrics, and perform additional enrollments, please press 2.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-0005.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-1002</displayname>
+        <talent/>
+        <phrasetext>Only two enrollments</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-1002.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-1001</displayname>
+        <talent/>
+        <phrasetext>Only one enrollment</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-1001.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-0006</displayname>
+        <talent/>
+        <phrasetext>left to complete.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-0006.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>createenroll-1003</displayname>
+        <talent/>
+        <phrasetext>There are still three enrollments</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>createenroll-1003.wav</audiofile>
+    </phrase>
+</phraseset>

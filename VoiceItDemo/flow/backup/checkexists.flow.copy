@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<AppFlowDoc>
+    <ApplicationFlow nextObjectId="62" package="flow.subflow.checkexists" version="5.0">
+        <FlowGraph>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="34" version="3.1">
+                <Property name="Name" value="NonExist"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="120"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="852"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
+                <Property name="Name" value="Begin"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="48"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="36"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SubEntry" id="2" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.GoTo" id="3" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Start"/>
+                                <Property name="LinkedNodeID" value="18"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="32" version="3.1">
+                <Property name="Name" value="Exists"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="48"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="849"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="18" version="3.1">
+                <Property name="Name" value="VoiceItAPI"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="48"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="228"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="19" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="20" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.SimpleVariable" id="21" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="fail"/>
+                                        <Property name="value" value="false"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.TryBlock" id="22" version="1.2">
+                            <ItemProperties/>
+                            <ChildItems>
+                                <FlowItem class="com.voiceit_tech.od.plugins.api2.user.checkExists" id="37" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="CheckUserExistsResult"/>
+                                        <Property name="voiceit.checkuserexists.userid.varname" value="userId"/>
+                                        <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.api2.user.checkExists"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="36" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="trace.varId" value="CheckUserExistsResult"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="58" version="1.2">
+                                    <ItemProperties/>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanOperator" id="59" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="Operator" value="OR"/>
+                                            </ItemProperties>
+                                            <ChildItems>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="60" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="Operator" value="IsTrue"/>
+                                                        <Property name="LeftOperandFieldID" value="API_Error"/>
+                                                        <Property name="LeftOperandID" value="CheckUserExistsResult"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="61" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="Operator" value="IsFalse"/>
+                                                        <Property name="LeftOperandID" value="CheckUserExistsResult"/>
+                                                        <Property name="LeftOperandFieldID" value="IsSuccess"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                            </ChildItems>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="62" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="true"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="fail(L)"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.CatchBlock" id="24" version="1.2">
+                                    <ItemProperties/>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="25" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="true"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="fail(L)"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="28" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="IsFalse"/>
+                                <Property name="LeftOperandID" value="fail(L)"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="29" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="Success"/>
+                                        <Property name="LinkedNodeID" value="40"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="30" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="38"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="38" version="3.1">
+                <Property name="Name" value="Error"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="132"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="528"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="40" version="3.1">
+                <Property name="Name" value="CheckExists"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="48"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="528"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Data" id="41" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.LocalVariables" id="42" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="LocalVariables"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="44" version="1.2">
+                            <ItemProperties>
+                                <Property name="Operator" value="IsTrue"/>
+                                <Property name="LeftOperandFieldID" value="exists"/>
+                                <Property name="LeftOperandID" value="CheckUserExistsResult"/>
+                            </ItemProperties>
+                            <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="45" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Name" value="Exists"/>
+                                        <Property name="LinkedNodeID" value="32"/>
+                                    </ItemProperties>
+                                    <ChildItems/>
+                                </FlowItem>
+                            </ChildItems>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="43" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="Default"/>
+                                <Property name="LinkedNodeID" value="34"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
+            </FlowNode>
+            <NodeConnection id="31" version="1.2">
+                <SourceNode id="1"/>
+                <TargetNode id="18"/>
+                <Property name="Connection.SourceObjectID" value="3"/>
+                <Property name="Connection.TargetObjectID" value="18"/>
+            </NodeConnection>
+            <NodeConnection id="39" version="1.2">
+                <SourceNode id="18"/>
+                <TargetNode id="38"/>
+                <Property name="Connection.SourceObjectID" value="30"/>
+                <Property name="Connection.TargetObjectID" value="38"/>
+            </NodeConnection>
+            <NodeConnection id="46" version="1.2">
+                <SourceNode id="18"/>
+                <TargetNode id="40"/>
+                <Property name="Connection.SourceObjectID" value="29"/>
+                <Property name="Connection.TargetObjectID" value="40"/>
+            </NodeConnection>
+            <NodeConnection id="47" version="1.2">
+                <SourceNode id="40"/>
+                <TargetNode id="32"/>
+                <Property name="Connection.SourceObjectID" value="45"/>
+                <Property name="Connection.TargetObjectID" value="32"/>
+            </NodeConnection>
+            <NodeConnection id="55" version="1.2">
+                <SourceNode id="40"/>
+                <TargetNode id="34"/>
+                <Property name="Connection.SourceObjectID" value="43"/>
+                <Property name="Connection.TargetObjectID" value="34"/>
+            </NodeConnection>
+        </FlowGraph>
+        <ProjectEventTypes/>
+    </ApplicationFlow>
+</AppFlowDoc>

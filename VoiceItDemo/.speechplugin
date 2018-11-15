@@ -7,24 +7,15 @@
             <nestedpropertystore>
                 <propertystore id="scert" version="1.0">
                     <propertymap>
-                        <property name="version" value="07.01.08.04" version="1.0"/>
+                        <property name="version" value="07.00.18.01" version="1.0"/>
                     </propertymap>
-                    <nestedpropertystore/>
-                </propertystore>
-            </nestedpropertystore>
-        </propertystore>
-        <propertystore id="com" version="1.0">
-            <propertymap/>
-            <nestedpropertystore>
-                <propertystore id="voiceit_tech" version="1.0">
-                    <propertymap/>
                     <nestedpropertystore/>
                 </propertystore>
             </nestedpropertystore>
         </propertystore>
         <propertystore id="prompts" version="1.0">
             <propertymap>
-                <property name="timeout_constant_number" value="5" version="1.0"/>
+                <property name="timeout_constant_number" value="8" version="1.0"/>
                 <property name="timeout_constant_unit" value="0" version="1.0"/>
                 <property name="timeout_presentation" value="constant" version="1.0"/>
             </propertymap>
@@ -41,7 +32,7 @@
                 </propertystore>
                 <propertystore id="scert" version="1.0">
                     <propertymap>
-                        <property name="version" value="07.01.08.04" version="1.0"/>
+                        <property name="version" value="07.00.18.01" version="1.0"/>
                     </propertymap>
                     <nestedpropertystore/>
                 </propertystore>
@@ -53,38 +44,8 @@
                 <propertystore id="comvoiceit_techodpluginsui" version="1.0">
                     <propertymap>
                         <property name="connectorId" value="com.voiceit_tech.od.plugins.ui" version="1.0"/>
-                        <property name="currentVersion" value="1" version="1.0"/>
-                        <property name="displayName" value="VoiceIt™ API Functionality" version="1.0"/>
-                    </propertymap>
-                    <nestedpropertystore/>
-                </propertystore>
-            </nestedpropertystore>
-        </propertystore>
-        <propertystore id="grammars" version="1.0">
-            <propertymap>
-                <property name="caching" value="none" version="1.0"/>
-            </propertymap>
-            <nestedpropertystore/>
-        </propertystore>
-        <propertystore id="general" version="1.0">
-            <propertymap/>
-            <nestedpropertystore>
-                <propertystore id="project" version="1.0">
-                    <propertymap>
-                        <property name="category" value="Demo Application" version="1.0"/>
-                        <property name="vendor" value="VoiceIt Technologies, LLC" version="1.0"/>
-                        <property name="iconsm" value="icons/defaultapplicationsm.gif" version="1.0"/>
-                        <property name="logpropertiesupdated" value="3.0.17x2" version="1.0"/>
-                        <property name="name" value="VoiceItDemo" version="1.0"/>
-                        <property name="iconlg" value="icons/defaultapplicationlg.gif" version="1.0"/>
-                        <property name="dtmfVarsEnabled" value="false" version="1.0"/>
-                        <property name="version" value="1.0.0" version="1.0"/>
-                    </propertymap>
-                    <nestedpropertystore/>
-                </propertystore>
-                <propertystore id="ide" version="1.0">
-                    <propertymap>
-                        <property name="version" value="410" version="1.0"/>
+                        <property name="currentVersion" value="2" version="1.0"/>
+                        <property name="displayName" value="VoiceIt™ API 2.0 Functionality" version="1.0"/>
                     </propertymap>
                     <nestedpropertystore/>
                 </propertystore>
@@ -109,6 +70,37 @@
                 <propertystore id="ic_vrusm" version="1.0">
                     <propertymap>
                         <property name="enabled" value="false" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+            </nestedpropertystore>
+        </propertystore>
+        <propertystore id="grammars" version="1.0">
+            <propertymap>
+                <property name="caching" value="none" version="1.0"/>
+            </propertymap>
+            <nestedpropertystore/>
+        </propertystore>
+        <propertystore id="general" version="1.0">
+            <propertymap/>
+            <nestedpropertystore>
+                <propertystore id="project" version="1.0">
+                    <propertymap>
+                        <property name="category" value="VoiceIt Demonstration" version="1.0"/>
+                        <property name="iconsm" value="icons/defaultapplicationsm.gif" version="1.0"/>
+                        <property name="vendor" value="Top Cat Technology Solutions, LLC" version="1.0"/>
+                        <property name="description" value="Avaya Orchestration Designer 7.x application that demonstrates the VoiceIt Technologies Biometric services integration.&#13;&#10;&#13;&#10;Application Design: Top Cat Technology Solutions, LLC&#13;&#10;" version="1.0"/>
+                        <property name="logpropertiesupdated" value="3.0.17x2" version="1.0"/>
+                        <property name="name" value="VoiceItDemo" version="1.0"/>
+                        <property name="iconlg" value="icons/defaultapplicationlg.gif" version="1.0"/>
+                        <property name="dtmfVarsEnabled" value="false" version="1.0"/>
+                        <property name="version" value="2.0.0" version="1.0"/>
+                    </propertymap>
+                    <nestedpropertystore/>
+                </propertystore>
+                <propertystore id="ide" version="1.0">
+                    <propertymap>
+                        <property name="version" value="410" version="1.0"/>
                     </propertymap>
                     <nestedpropertystore/>
                 </propertystore>

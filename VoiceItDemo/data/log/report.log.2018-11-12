@@ -1,0 +1,497 @@
+12/11/2018 07:33:34:601  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 07:33:34:858  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 07:33:34:919  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 07:33:35:055  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 07:33:35:123  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:VerifyExists | Framework | VerifyExists |  |  | undefined
+12/11/2018 07:33:35:176  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:checkexists-Begin | Framework | checkexists-Begin |  |  | undefined
+12/11/2018 07:33:35:239  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:checkexists-VoiceItAPI | Framework | checkexists-VoiceItAPI |  |  | undefined
+12/11/2018 07:34:15:150  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:checkexists-CheckExists | Framework | checkexists-CheckExists |  |  | undefined
+12/11/2018 07:34:15:203  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:checkexists-Exists | Framework | checkexists-Exists |  |  | undefined
+12/11/2018 07:34:15:256  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:GetEnrollments | Framework | GetEnrollments |  |  | undefined
+12/11/2018 07:34:15:309  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getenrollments-Begin | Framework | getenrollments-Begin |  |  | undefined
+12/11/2018 07:34:15:361  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getenrollments-VoiceItAPI | Framework | getenrollments-VoiceItAPI |  |  | undefined
+12/11/2018 07:34:15:993  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getenrollments-DetermineUsablePhrase | Framework | getenrollments-DetermineUsablePhrase |  |  | undefined
+12/11/2018 07:34:16:047  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getenrollments-InformIncomplete | Framework | getenrollments-InformIncomplete |  |  | undefined
+12/11/2018 07:34:16:124  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getenrollments-Incomplete | Framework | getenrollments-Incomplete |  |  | undefined
+12/11/2018 07:34:16:177  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:CreateEnrollment | Framework | CreateEnrollment |  |  | undefined
+12/11/2018 07:34:16:254  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-Begin | Framework | createenrollment-Begin |  |  | undefined
+12/11/2018 07:34:16:307  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-CheckPhrase | Framework | createenrollment-CheckPhrase |  |  | undefined
+12/11/2018 07:34:16:359  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-GetPhraseToSpeak | Framework | createenrollment-GetPhraseToSpeak |  |  | undefined
+12/11/2018 07:34:16:411  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getphrases-Begin | Framework | getphrases-Begin |  |  | undefined
+12/11/2018 07:34:16:463  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getphrases-VoiceItAPI | Framework | getphrases-VoiceItAPI |  |  | undefined
+12/11/2018 07:34:17:145  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getphrases-ChosePhrase | Framework | getphrases-ChosePhrase |  |  | undefined
+12/11/2018 07:34:17:197  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:getphrases-Default | Framework | getphrases-Default |  |  | undefined
+12/11/2018 07:34:17:249  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-Greeting | Framework | createenrollment-Greeting |  |  | undefined
+12/11/2018 07:34:17:326  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-PromptWhenReady | Framework | createenrollment-PromptWhenReady |  |  | undefined
+12/11/2018 07:34:55:172  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-GetRecording | Framework | createenrollment-GetRecording | CreateEnrollReadyPrompt___utterance | #^0.949999988079071^0^0 | undefined
+12/11/2018 07:34:55:226  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:recording-Begin | Framework | recording-Begin |  |  | undefined
+12/11/2018 07:34:55:277  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:recording-Recording | Framework | recording-Recording |  |  | undefined
+12/11/2018 07:35:08:506  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:recording-ReplaySpokenPhrase | Framework | recording-ReplaySpokenPhrase |  |  | undefined
+12/11/2018 07:35:08:591  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:recording-Default | Framework | recording-Default |  |  | undefined
+12/11/2018 07:35:08:645  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-VoiceItAPI | Framework | createenrollment-VoiceItAPI |  |  | undefined
+12/11/2018 07:35:15:424 ERROR - In Progress | session id:sess8309004 | VoiceItDemo:createenrollment-VoiceItAPI |  | null | Exception stack trace |  EXCEPTION> 
+java.lang.NullPointerException
+	at com.voiceit_tech.od.runtime.RTCommon.setValue(RTCommon.java:107)
+	at com.voiceit_tech.od.runtime.BasePluggableExecutable.setValues(BasePluggableExecutable.java:119)
+	at com.voiceit_tech.od.runtime.BasePluggableExecutable.setValues(BasePluggableExecutable.java:111)
+	at com.voiceit_tech.od.api2.operations.CreateVoiceEnrollment.executeVoiceItApi(CreateVoiceEnrollment.java:115)
+	at com.voiceit_tech.od.runtime.BasePluggableExecutable.execute(BasePluggableExecutable.java:75)
+	at com.voiceit_tech.od.api2.Api2PluggableExecutable.execute(Api2PluggableExecutable.java:65)
+	at com.avaya.sce.runtime.Data.evaluateActions(Data.java:200)
+	at flow.subflow.createenrollment.VoiceItAPI.executeDataActions(VoiceItAPI.java:87)
+	at com.avaya.sce.runtime.Data.handleRequest(Data.java:104)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1348)
+	at com.avaya.sce.runtime.SubflowReturn.handleRequest(SubflowReturn.java:120)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:498)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:1025)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
+12/11/2018 07:35:23:085  WARN - In Progress | session id:sess8309004 | VoiceItDemo:createenrollment-Error | Error encoding value | null | Exception stack trace |  EXCEPTION> 
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(Unknown Source)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.checkValueSize(DebugInfo.java:472)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.getVariableData(DebugInfo.java:549)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.buildBreakPointMessage(DebugInfo.java:668)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.breakPointHit(DebugInfo.java:686)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.checkBreakPoint(DebugInfo.java:235)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.updateStatus(DebugInfo.java:626)
+	at com.avaya.sce.runtime.SCEServlet.updateDebug(SCEServlet.java:730)
+	at com.avaya.sce.runtime.SCEServlet.processRequest(SCEServlet.java:589)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:76)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1348)
+	at com.avaya.sce.runtime.Data.handleRequest(Data.java:153)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1348)
+	at com.avaya.sce.runtime.SubflowReturn.handleRequest(SubflowReturn.java:120)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:498)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:1025)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
+12/11/2018 07:35:25:716  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:createenrollment-Error | Framework | createenrollment-Error |  |  | undefined
+12/11/2018 07:35:25:775  WARN - In Progress | session id:sess8309004 | VoiceItDemo:InformAPIError | Error encoding value | null | Exception stack trace |  EXCEPTION> 
+java.lang.NullPointerException
+	at java.net.URLEncoder.encode(Unknown Source)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.checkValueSize(DebugInfo.java:472)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.getVariableData(DebugInfo.java:549)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.buildBreakPointMessage(DebugInfo.java:668)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.breakPointHit(DebugInfo.java:686)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.checkBreakPoint(DebugInfo.java:235)
+	at com.avaya.sce.runtimecommon.debug.DebugInfo.updateStatus(DebugInfo.java:626)
+	at com.avaya.sce.runtime.SCEServlet.updateDebug(SCEServlet.java:730)
+	at com.avaya.sce.runtime.SCEServlet.processRequest(SCEServlet.java:589)
+	at com.avaya.sce.runtime.AppDocument.processRequest(AppDocument.java:188)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1348)
+	at com.avaya.sce.runtime.SubflowReturn.handleRequest(SubflowReturn.java:120)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1348)
+	at com.avaya.sce.runtime.Data.handleRequest(Data.java:153)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1348)
+	at com.avaya.sce.runtime.SubflowReturn.handleRequest(SubflowReturn.java:120)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:498)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:1025)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
+12/11/2018 07:36:02:434  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:InformAPIError | Framework | InformAPIError |  |  | undefined
+12/11/2018 07:36:02:563  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:SayGoodbye | Framework | SayGoodbye |  |  | undefined
+12/11/2018 07:36:02:656  INFO - Node Entry | session id:sess8309004 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  |  | undefined
+12/11/2018 07:36:02:659  INFO - Application Exit | session id:sess8309004 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 07:36:23:696  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 07:36:23:768  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 07:36:23:820  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 07:36:23:895  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 07:36:23:947  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:VerifyExists | Framework | VerifyExists |  |  | undefined
+12/11/2018 07:36:23:998  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:checkexists-Begin | Framework | checkexists-Begin |  |  | undefined
+12/11/2018 07:36:24:049  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:checkexists-VoiceItAPI | Framework | checkexists-VoiceItAPI |  |  | undefined
+12/11/2018 07:36:24:904  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:checkexists-CheckExists | Framework | checkexists-CheckExists |  |  | undefined
+12/11/2018 07:36:24:956  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:checkexists-Exists | Framework | checkexists-Exists |  |  | undefined
+12/11/2018 07:36:25:031  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:GetEnrollments | Framework | GetEnrollments |  |  | undefined
+12/11/2018 07:36:25:083  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getenrollments-Begin | Framework | getenrollments-Begin |  |  | undefined
+12/11/2018 07:36:25:136  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getenrollments-VoiceItAPI | Framework | getenrollments-VoiceItAPI |  |  | undefined
+12/11/2018 07:36:25:930  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getenrollments-DetermineUsablePhrase | Framework | getenrollments-DetermineUsablePhrase |  |  | undefined
+12/11/2018 07:36:25:984  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getenrollments-InformIncomplete | Framework | getenrollments-InformIncomplete |  |  | undefined
+12/11/2018 07:36:26:065  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getenrollments-Incomplete | Framework | getenrollments-Incomplete |  |  | undefined
+12/11/2018 07:36:26:117  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:CreateEnrollment | Framework | CreateEnrollment |  |  | undefined
+12/11/2018 07:36:26:169  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-Begin | Framework | createenrollment-Begin |  |  | undefined
+12/11/2018 07:36:26:220  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-CheckPhrase | Framework | createenrollment-CheckPhrase |  |  | undefined
+12/11/2018 07:36:26:272  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-GetPhraseToSpeak | Framework | createenrollment-GetPhraseToSpeak |  |  | undefined
+12/11/2018 07:36:26:324  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getphrases-Begin | Framework | getphrases-Begin |  |  | undefined
+12/11/2018 07:36:26:376  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getphrases-VoiceItAPI | Framework | getphrases-VoiceItAPI |  |  | undefined
+12/11/2018 07:36:27:098  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getphrases-ChosePhrase | Framework | getphrases-ChosePhrase |  |  | undefined
+12/11/2018 07:36:27:151  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:getphrases-Default | Framework | getphrases-Default |  |  | undefined
+12/11/2018 07:36:27:204  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-Greeting | Framework | createenrollment-Greeting |  |  | undefined
+12/11/2018 07:36:27:275  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-PromptWhenReady | Framework | createenrollment-PromptWhenReady |  |  | undefined
+12/11/2018 07:36:59:276  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-GetRecording | Framework | createenrollment-GetRecording | CreateEnrollReadyPrompt___utterance | #^0.949999988079071^0^0 | undefined
+12/11/2018 07:36:59:328  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:recording-Begin | Framework | recording-Begin |  |  | undefined
+12/11/2018 07:36:59:379  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:recording-Recording | Framework | recording-Recording |  |  | undefined
+12/11/2018 07:37:11:029  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:recording-ReplaySpokenPhrase | Framework | recording-ReplaySpokenPhrase |  |  | undefined
+12/11/2018 07:37:11:143  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:recording-Default | Framework | recording-Default |  |  | undefined
+12/11/2018 07:37:11:196  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-VoiceItAPI | Framework | createenrollment-VoiceItAPI |  |  | undefined
+12/11/2018 07:37:17:688 ERROR - In Progress | session id:sess3675634 | VoiceItDemo:createenrollment-VoiceItAPI |  | null | Exception stack trace |  EXCEPTION> 
+java.lang.NullPointerException
+	at com.voiceit_tech.od.runtime.RTCommon.setValue(RTCommon.java:107)
+	at com.voiceit_tech.od.runtime.BasePluggableExecutable.setValues(BasePluggableExecutable.java:119)
+	at com.voiceit_tech.od.runtime.BasePluggableExecutable.setValues(BasePluggableExecutable.java:111)
+	at com.voiceit_tech.od.api2.operations.CreateVoiceEnrollment.executeVoiceItApi(CreateVoiceEnrollment.java:115)
+	at com.voiceit_tech.od.runtime.BasePluggableExecutable.execute(BasePluggableExecutable.java:75)
+	at com.voiceit_tech.od.api2.Api2PluggableExecutable.execute(Api2PluggableExecutable.java:65)
+	at com.avaya.sce.runtime.Data.evaluateActions(Data.java:200)
+	at flow.subflow.createenrollment.VoiceItAPI.executeDataActions(VoiceItAPI.java:87)
+	at com.avaya.sce.runtime.Data.handleRequest(Data.java:104)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:743)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:485)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:410)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:337)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1348)
+	at com.avaya.sce.runtime.SubflowReturn.handleRequest(SubflowReturn.java:120)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:285)
+	at com.avaya.sce.runtime.SCEServlet.doGet(SCEServlet.java:182)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:219)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:498)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:1025)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:445)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1115)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+ | undefined
+12/11/2018 07:37:17:763  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:createenrollment-Error | Framework | createenrollment-Error |  |  | undefined
+12/11/2018 07:37:17:815  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:InformAPIError | Framework | InformAPIError |  |  | undefined
+12/11/2018 07:37:17:921  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:SayGoodbye | Framework | SayGoodbye |  |  | undefined
+12/11/2018 07:37:18:009  INFO - Node Entry | session id:sess3675634 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  |  | undefined
+12/11/2018 07:37:18:009  INFO - Application Exit | session id:sess3675634 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 08:00:40:977  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 08:00:41:291  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 08:00:41:356  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 08:00:41:539  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 08:00:41:601  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:VerifyExists | Framework | VerifyExists |  |  | undefined
+12/11/2018 08:00:41:657  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:checkexists-Begin | Framework | checkexists-Begin |  |  | undefined
+12/11/2018 08:00:41:725  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:checkexists-VoiceItAPI | Framework | checkexists-VoiceItAPI |  |  | undefined
+12/11/2018 08:00:43:391  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:checkexists-CheckExists | Framework | checkexists-CheckExists |  |  | undefined
+12/11/2018 08:00:43:461  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:checkexists-Exists | Framework | checkexists-Exists |  |  | undefined
+12/11/2018 08:00:43:527  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:GetEnrollments | Framework | GetEnrollments |  |  | undefined
+12/11/2018 08:00:43:593  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getenrollments-Begin | Framework | getenrollments-Begin |  |  | undefined
+12/11/2018 08:00:43:661  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getenrollments-VoiceItAPI | Framework | getenrollments-VoiceItAPI |  |  | undefined
+12/11/2018 08:00:44:273  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getenrollments-DetermineUsablePhrase | Framework | getenrollments-DetermineUsablePhrase |  |  | undefined
+12/11/2018 08:00:44:346  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getenrollments-InformIncomplete | Framework | getenrollments-InformIncomplete |  |  | undefined
+12/11/2018 08:00:44:454  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getenrollments-Incomplete | Framework | getenrollments-Incomplete |  |  | undefined
+12/11/2018 08:00:44:511  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:CreateEnrollment | Framework | CreateEnrollment |  |  | undefined
+12/11/2018 08:00:44:576  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-Begin | Framework | createenrollment-Begin |  |  | undefined
+12/11/2018 08:00:44:638  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-CheckPhrase | Framework | createenrollment-CheckPhrase |  |  | undefined
+12/11/2018 08:00:44:695  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-GetPhraseToSpeak | Framework | createenrollment-GetPhraseToSpeak |  |  | undefined
+12/11/2018 08:00:44:761  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getphrases-Begin | Framework | getphrases-Begin |  |  | undefined
+12/11/2018 08:00:44:828  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getphrases-VoiceItAPI | Framework | getphrases-VoiceItAPI |  |  | undefined
+12/11/2018 08:00:45:510  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getphrases-ChosePhrase | Framework | getphrases-ChosePhrase |  |  | undefined
+12/11/2018 08:00:45:562  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:getphrases-Default | Framework | getphrases-Default |  |  | undefined
+12/11/2018 08:00:45:626  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-Greeting | Framework | createenrollment-Greeting |  |  | undefined
+12/11/2018 08:00:45:726  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-PromptWhenReady | Framework | createenrollment-PromptWhenReady |  |  | undefined
+12/11/2018 08:01:17:996  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-GetRecording | Framework | createenrollment-GetRecording | CreateEnrollReadyPrompt___utterance | #^0.949999988079071^0^0 | undefined
+12/11/2018 08:01:18:061  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:recording-Begin | Framework | recording-Begin |  |  | undefined
+12/11/2018 08:01:18:126  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:recording-Recording | Framework | recording-Recording |  |  | undefined
+12/11/2018 08:01:29:438  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:recording-ReplaySpokenPhrase | Framework | recording-ReplaySpokenPhrase |  |  | undefined
+12/11/2018 08:01:29:539  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:recording-Default | Framework | recording-Default |  |  | undefined
+12/11/2018 08:01:29:605  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-VoiceItAPI | Framework | createenrollment-VoiceItAPI |  |  | undefined
+12/11/2018 08:01:31:470  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:createenrollment-Error | Framework | createenrollment-Error |  |  | undefined
+12/11/2018 08:01:31:531  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:InformAPIError | Framework | InformAPIError |  |  | undefined
+12/11/2018 08:01:31:682  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:SayGoodbye | Framework | SayGoodbye |  |  | undefined
+12/11/2018 08:01:31:798  INFO - Node Entry | session id:sess2178806 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  |  | undefined
+12/11/2018 08:01:31:800  INFO - Application Exit | session id:sess2178806 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 08:03:56:115  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 08:03:56:371  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 08:03:56:471  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 08:03:56:651  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 08:03:56:720  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:VerifyExists | Framework | VerifyExists |  |  | undefined
+12/11/2018 08:03:56:787  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:checkexists-Begin | Framework | checkexists-Begin |  |  | undefined
+12/11/2018 08:03:56:854  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:checkexists-VoiceItAPI | Framework | checkexists-VoiceItAPI |  |  | undefined
+12/11/2018 08:03:58:580  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:checkexists-CheckExists | Framework | checkexists-CheckExists |  |  | undefined
+12/11/2018 08:03:58:641  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:checkexists-Exists | Framework | checkexists-Exists |  |  | undefined
+12/11/2018 08:03:58:706  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:GetEnrollments | Framework | GetEnrollments |  |  | undefined
+12/11/2018 08:03:58:771  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:getenrollments-Begin | Framework | getenrollments-Begin |  |  | undefined
+12/11/2018 08:03:58:825  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:getenrollments-VoiceItAPI | Framework | getenrollments-VoiceItAPI |  |  | undefined
+12/11/2018 08:03:59:576  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:getenrollments-DetermineUsablePhrase | Framework | getenrollments-DetermineUsablePhrase |  |  | undefined
+12/11/2018 08:03:59:642  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:getenrollments-InformIncomplete | Framework | getenrollments-InformIncomplete |  |  | undefined
+12/11/2018 08:03:59:759  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:getenrollments-Incomplete | Framework | getenrollments-Incomplete |  |  | undefined
+12/11/2018 08:03:59:824  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:CreateEnrollment | Framework | CreateEnrollment |  |  | undefined
+12/11/2018 08:03:59:875  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-Begin | Framework | createenrollment-Begin |  |  | undefined
+12/11/2018 08:03:59:942  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-CheckPhrase | Framework | createenrollment-CheckPhrase |  |  | undefined
+12/11/2018 08:04:00:009  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-Greeting | Framework | createenrollment-Greeting |  |  | undefined
+12/11/2018 08:04:00:102  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-PromptWhenReady | Framework | createenrollment-PromptWhenReady |  |  | undefined
+12/11/2018 08:04:20:889  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-GetRecording | Framework | createenrollment-GetRecording | CreateEnrollReadyPrompt___utterance | #^0.949999988079071^0^0 | undefined
+12/11/2018 08:04:20:957  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:recording-Begin | Framework | recording-Begin |  |  | undefined
+12/11/2018 08:04:21:023  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:recording-Recording | Framework | recording-Recording |  |  | undefined
+12/11/2018 08:04:32:406  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:recording-ReplaySpokenPhrase | Framework | recording-ReplaySpokenPhrase |  |  | undefined
+12/11/2018 08:04:32:547  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:recording-Default | Framework | recording-Default |  |  | undefined
+12/11/2018 08:04:32:614  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-VoiceItAPI | Framework | createenrollment-VoiceItAPI |  |  | undefined
+12/11/2018 08:04:35:194  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-InformFailure | Framework | createenrollment-InformFailure |  |  | undefined
+12/11/2018 08:04:35:311  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-InformRemaining | Framework | createenrollment-InformRemaining |  |  | undefined
+12/11/2018 08:04:35:460  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:createenrollment-PromptWhenReady | Framework | createenrollment-PromptWhenReady |  |  | undefined
+12/11/2018 08:04:57:441  INFO - Node Entry | session id:sess6650796 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  | ^^0^0 | undefined
+12/11/2018 08:04:57:442  INFO - Application Exit | session id:sess6650796 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 08:36:47:230  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 08:36:47:612  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 08:36:47:697  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 08:36:55:402  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 08:36:55:486  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:CreateUser | Framework | CreateUser |  |  | undefined
+12/11/2018 08:36:55:545  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createuser-Begin | Framework | createuser-Begin |  |  | undefined
+12/11/2018 08:36:55:604  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createuser-Greeting | Framework | createuser-Greeting |  |  | undefined
+12/11/2018 08:37:05:313  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createuser-VoiceItAPI | Framework | createuser-VoiceItAPI |  |  | undefined
+12/11/2018 08:37:07:437  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createuser-SaveProfileMap | Framework | createuser-SaveProfileMap |  |  | undefined
+12/11/2018 08:37:07:518  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createuser-InformSuccess | Framework | createuser-InformSuccess |  |  | undefined
+12/11/2018 08:37:07:697  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createuser-Default | Framework | createuser-Default |  |  | undefined
+12/11/2018 08:37:07:763  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:CheckCreateSuccess | Framework | CheckCreateSuccess |  |  | undefined
+12/11/2018 08:37:07:828  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:CreateEnrollment | Framework | CreateEnrollment |  |  | undefined
+12/11/2018 08:37:07:897  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createenrollment-Begin | Framework | createenrollment-Begin |  |  | undefined
+12/11/2018 08:37:07:957  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createenrollment-CheckPhrase | Framework | createenrollment-CheckPhrase |  |  | undefined
+12/11/2018 08:37:08:021  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createenrollment-GetPhraseToSpeak | Framework | createenrollment-GetPhraseToSpeak |  |  | undefined
+12/11/2018 08:37:08:091  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:getphrases-Begin | Framework | getphrases-Begin |  |  | undefined
+12/11/2018 08:37:08:143  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:getphrases-VoiceItAPI | Framework | getphrases-VoiceItAPI |  |  | undefined
+12/11/2018 08:37:10:144  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:getphrases-ChosePhrase | Framework | getphrases-ChosePhrase |  |  | undefined
+12/11/2018 08:37:10:207  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:getphrases-Default | Framework | getphrases-Default |  |  | undefined
+12/11/2018 08:37:10:272  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:createenrollment-Greeting | Framework | createenrollment-Greeting |  |  | undefined
+12/11/2018 08:37:10:350  INFO - Node Entry | session id:sess1329304 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  | ^^0^0 | undefined
+12/11/2018 08:37:10:351  INFO - Application Exit | session id:sess1329304 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 20:17:01:290  INFO - Node Entry | session id:sess4153957 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 20:17:01:739  INFO - Node Entry | session id:sess4153957 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 20:17:01:820  INFO - Node Entry | session id:sess4153957 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 20:17:09:642  INFO - Node Entry | session id:sess4153957 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 20:17:09:746  INFO - Node Entry | session id:sess4153957 | VoiceItDemo:InformAPIError | Framework | InformAPIError |  |  | undefined
+12/11/2018 20:17:19:848  INFO - Node Entry | session id:sess4153957 | VoiceItDemo:SayGoodbye | Framework | SayGoodbye |  |  | undefined
+12/11/2018 20:17:23:703  INFO - Node Entry | session id:sess4153957 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  |  | undefined
+12/11/2018 20:17:23:712  INFO - Application Exit | session id:sess4153957 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 20:18:17:037  INFO - Node Entry | session id:sess4272285 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 20:18:17:230  INFO - Node Entry | session id:sess4272285 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 20:18:17:288  INFO - Node Entry | session id:sess4272285 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 20:18:25:375  INFO - Node Entry | session id:sess4272285 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 20:18:25:427  INFO - Node Entry | session id:sess4272285 | VoiceItDemo:InformAPIError | Framework | InformAPIError |  |  | undefined
+12/11/2018 20:18:31:768  INFO - Node Entry | session id:sess4272285 | VoiceItDemo:SayGoodbye | Framework | SayGoodbye |  |  | undefined
+12/11/2018 20:18:31:840  INFO - Node Entry | session id:sess4272285 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  | ^^0^0 | undefined
+12/11/2018 20:18:31:841  INFO - Application Exit | session id:sess4272285 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 20:23:59:626  INFO - Node Entry | session id:sess328585 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 20:23:59:847  INFO - Node Entry | session id:sess328585 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 20:23:59:912  INFO - Node Entry | session id:sess328585 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 20:24:07:781  INFO - Node Entry | session id:sess328585 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 20:24:07:859  INFO - Node Entry | session id:sess328585 | VoiceItDemo:untitledSubFlowRef1 | Framework | untitledSubFlowRef1 |  |  | undefined
+12/11/2018 20:24:07:917  INFO - Node Entry | session id:sess328585 | VoiceItDemo:getphrases-Begin | Framework | getphrases-Begin |  |  | undefined
+12/11/2018 20:24:07:977  INFO - Node Entry | session id:sess328585 | VoiceItDemo:getphrases-VoiceItAPI | Framework | getphrases-VoiceItAPI |  |  | undefined
+12/11/2018 20:24:11:607  INFO - Node Entry | session id:sess328585 | VoiceItDemo:getphrases-ChosePhrase | Framework | getphrases-ChosePhrase |  |  | undefined
+12/11/2018 20:24:11:661  INFO - Node Entry | session id:sess328585 | VoiceItDemo:getphrases-Default | Framework | getphrases-Default |  |  | undefined
+12/11/2018 20:24:11:714  INFO - Node Entry | session id:sess328585 | VoiceItDemo:VerifyCaller | Framework | VerifyCaller |  |  | undefined
+12/11/2018 20:24:11:768  INFO - Node Entry | session id:sess328585 | VoiceItDemo:voiceverification-Begin | Framework | voiceverification-Begin |  |  | undefined
+12/11/2018 20:24:11:822  INFO - Node Entry | session id:sess328585 | VoiceItDemo:voiceverification-Greeting | Framework | voiceverification-Greeting |  |  | undefined
+12/11/2018 20:24:28:939  INFO - Node Entry | session id:sess328585 | VoiceItDemo:voiceverification-PromptWhenReady | Framework | voiceverification-PromptWhenReady |  |  | undefined
+12/11/2018 20:24:37:280  INFO - Node Entry | session id:sess328585 | VoiceItDemo:voiceverification-GetRecording | Framework | voiceverification-GetRecording | VerificationReadyPrompt___utterance | #^0.949999988079071^0^0 | undefined
+12/11/2018 20:24:37:337  INFO - Node Entry | session id:sess328585 | VoiceItDemo:recording-Begin | Framework | recording-Begin |  |  | undefined
+12/11/2018 20:24:37:393  INFO - Node Entry | session id:sess328585 | VoiceItDemo:recording-Recording | Framework | recording-Recording |  |  | undefined
+12/11/2018 20:24:52:059  INFO - Node Entry | session id:sess328585 | VoiceItDemo:recording-ReplaySpokenPhrase | Framework | recording-ReplaySpokenPhrase |  |  | undefined
+12/11/2018 20:25:00:315  INFO - Node Entry | session id:sess328585 | VoiceItDemo:recording-Default | Framework | recording-Default |  |  | undefined
+12/11/2018 20:25:00:373  INFO - Node Entry | session id:sess328585 | VoiceItDemo:voiceverification-VoiceItAPI | Framework | voiceverification-VoiceItAPI |  |  | undefined
+12/11/2018 20:25:02:984  INFO - Node Entry | session id:sess328585 | VoiceItDemo:voiceverification-InformFailure | Framework | voiceverification-InformFailure |  |  | undefined
+12/11/2018 20:25:25:557  INFO - Node Entry | session id:sess328585 | VoiceItDemo:voiceverification-PromptWhenReady | Framework | voiceverification-PromptWhenReady |  |  | undefined
+12/11/2018 20:25:30:874  INFO - Node Entry | session id:sess328585 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  | ^^0^0 | undefined
+12/11/2018 20:25:30:878  INFO - Application Exit | session id:sess328585 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
+12/11/2018 21:45:23:110  INFO - Node Entry | session id:sess698259 | VoiceItDemo:Start | Framework | Start |  |  | 
+12/11/2018 21:45:23:410  INFO - Node Entry | session id:sess698259 | VoiceItDemo:UseridLookup | Framework | UseridLookup |  |  | undefined
+12/11/2018 21:45:23:472  INFO - Node Entry | session id:sess698259 | VoiceItDemo:Greeting | Framework | Greeting |  |  | undefined
+12/11/2018 21:45:31:326  INFO - Node Entry | session id:sess698259 | VoiceItDemo:CheckNewCaller | Framework | CheckNewCaller |  |  | undefined
+12/11/2018 21:45:31:398  INFO - Node Entry | session id:sess698259 | VoiceItDemo:VerifyExists | Framework | VerifyExists |  |  | undefined
+12/11/2018 21:45:31:454  INFO - Node Entry | session id:sess698259 | VoiceItDemo:checkexists-Begin | Framework | checkexists-Begin |  |  | undefined
+12/11/2018 21:45:31:510  INFO - Node Entry | session id:sess698259 | VoiceItDemo:checkexists-VoiceItAPI | Framework | checkexists-VoiceItAPI |  |  | undefined
+12/11/2018 21:45:34:494  INFO - Node Entry | session id:sess698259 | VoiceItDemo:checkexists-CheckExists | Framework | checkexists-CheckExists |  |  | undefined
+12/11/2018 21:45:34:549  INFO - Node Entry | session id:sess698259 | VoiceItDemo:checkexists-Exists | Framework | checkexists-Exists |  |  | undefined
+12/11/2018 21:45:34:603  INFO - Node Entry | session id:sess698259 | VoiceItDemo:GetEnrollments | Framework | GetEnrollments |  |  | undefined
+12/11/2018 21:45:34:660  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getenrollments-Begin | Framework | getenrollments-Begin |  |  | undefined
+12/11/2018 21:45:34:715  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getenrollments-VoiceItAPI | Framework | getenrollments-VoiceItAPI |  |  | undefined
+12/11/2018 21:45:36:451  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getenrollments-DetermineUsablePhrase | Framework | getenrollments-DetermineUsablePhrase |  |  | undefined
+12/11/2018 21:45:36:521  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getenrollments-InformIncomplete | Framework | getenrollments-InformIncomplete |  |  | undefined
+12/11/2018 21:45:44:721  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getenrollments-Incomplete | Framework | getenrollments-Incomplete |  |  | undefined
+12/11/2018 21:45:44:780  INFO - Node Entry | session id:sess698259 | VoiceItDemo:CreateEnrollment | Framework | CreateEnrollment |  |  | undefined
+12/11/2018 21:45:44:840  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-Begin | Framework | createenrollment-Begin |  |  | undefined
+12/11/2018 21:45:44:898  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-CheckPhrase | Framework | createenrollment-CheckPhrase |  |  | undefined
+12/11/2018 21:45:44:957  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-GetPhraseToSpeak | Framework | createenrollment-GetPhraseToSpeak |  |  | undefined
+12/11/2018 21:45:45:010  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getphrases-Begin | Framework | getphrases-Begin |  |  | undefined
+12/11/2018 21:45:45:062  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getphrases-VoiceItAPI | Framework | getphrases-VoiceItAPI |  |  | undefined
+12/11/2018 21:45:47:726  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getphrases-ChosePhrase | Framework | getphrases-ChosePhrase |  |  | undefined
+12/11/2018 21:45:47:787  INFO - Node Entry | session id:sess698259 | VoiceItDemo:getphrases-Default | Framework | getphrases-Default |  |  | undefined
+12/11/2018 21:45:47:842  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-Greeting | Framework | createenrollment-Greeting |  |  | undefined
+12/11/2018 21:46:10:728  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-PromptWhenReady | Framework | createenrollment-PromptWhenReady |  |  | undefined
+12/11/2018 21:46:32:379  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-GetRecording | Framework | createenrollment-GetRecording | CreateEnrollReadyPrompt___utterance | #^0.949999988079071^0^0 | undefined
+12/11/2018 21:46:32:433  INFO - Node Entry | session id:sess698259 | VoiceItDemo:recording-Begin | Framework | recording-Begin |  |  | undefined
+12/11/2018 21:46:32:489  INFO - Node Entry | session id:sess698259 | VoiceItDemo:recording-Recording | Framework | recording-Recording |  |  | undefined
+12/11/2018 21:46:48:115  INFO - Node Entry | session id:sess698259 | VoiceItDemo:recording-ReplaySpokenPhrase | Framework | recording-ReplaySpokenPhrase |  |  | undefined
+12/11/2018 21:46:56:617  INFO - Node Entry | session id:sess698259 | VoiceItDemo:recording-Default | Framework | recording-Default |  |  | undefined
+12/11/2018 21:46:56:677  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-VoiceItAPI | Framework | createenrollment-VoiceItAPI |  |  | undefined
+12/11/2018 21:46:59:148  INFO - Node Entry | session id:sess698259 | VoiceItDemo:createenrollment-Error | Framework | createenrollment-Error |  |  | undefined
+12/11/2018 21:46:59:206  INFO - Node Entry | session id:sess698259 | VoiceItDemo:InformAPIError | Framework | InformAPIError |  |  | undefined
+12/11/2018 21:47:09:204  INFO - Node Entry | session id:sess698259 | VoiceItDemo:SayGoodbye | Framework | SayGoodbye |  |  | undefined
+12/11/2018 21:47:12:876  INFO - Node Entry | session id:sess698259 | VoiceItDemo:EndOfApplication | Framework | EndOfApplication |  |  | undefined
+12/11/2018 21:47:12:878  INFO - Application Exit | session id:sess698259 | VoiceItDemo:EndOfApplication | Framework | Application Exiting |  |  | undefined
