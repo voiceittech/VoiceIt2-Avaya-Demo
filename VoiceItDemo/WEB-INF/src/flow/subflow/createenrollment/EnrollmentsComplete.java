@@ -101,14 +101,14 @@ public class EnrollmentsComplete extends com.avaya.sce.runtime.Menu {
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("Improve", "1", true, "exact", "createenrollment-PromptWhenReady", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("Improve", "2", true, "exact", "createenrollment-PromptWhenReady", grammarInfo, true);
 		list.add(choice);
 
 		// build the list of grammar information objects for the choice
 		grammarInfo = new java.util.ArrayList();
 
 
-		choice = new com.avaya.sce.runtime.Choice("Complete", "2", true, "exact", "createenrollment-Default", grammarInfo, true);
+		choice = new com.avaya.sce.runtime.Choice("Complete", "1", true, "exact", "createenrollment-Default", grammarInfo, true);
 		list.add(choice);
 
 		return(list);
