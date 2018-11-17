@@ -6,6 +6,6 @@ data/temp
 data/log
 flow/backup
 work
-WEB-INF/classes
+WEB-INF/profilemap.properties
 *.jar
 !WEB-INF/lib/**/*.jar
