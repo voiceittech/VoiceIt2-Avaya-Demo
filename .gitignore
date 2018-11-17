@@ -5,5 +5,7 @@ data/prompts/cache
 data/temp
 data/log
 flow/backup
+work
+WEB-INF/classes
 *.jar
 !WEB-INF/lib/**/*.jar
