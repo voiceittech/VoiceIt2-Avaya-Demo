@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="78" package="flow.subflow.getphrases" version="5.0">
+    <ApplicationFlow nextObjectId="84" package="flow.subflow.getphrases" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="Name" value="Begin"/>
@@ -50,23 +50,64 @@
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="62" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="type" value="collection.reset"/>
-                                        <Property name="destVarId" value="AllPhrases"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.VarCollIterator" id="63" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="varid" value="AllPhrases"/>
-                                    </ItemProperties>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="79" version="1.2">
+                                    <ItemProperties/>
                                     <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="61" version="1.2">
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanOperator" id="80" version="1.2">
                                             <ItemProperties>
-                                                <Property name="trace.varId" value="AllPhrases"/>
+                                                <Property name="Operator" value="OR"/>
+                                            </ItemProperties>
+                                            <ChildItems>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="81" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="Operator" value="IsTrue"/>
+                                                        <Property name="LeftOperandFieldID" value="API_Error"/>
+                                                        <Property name="LeftOperandID" value="AllPhrases"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="82" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="Operator" value="IsFalse"/>
+                                                        <Property name="LeftOperandID" value="AllPhrases"/>
+                                                        <Property name="LeftOperandFieldID" value="IsSuccess"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                            </ChildItems>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="83" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="sourceConstant" value="true"/>
+                                                <Property name="type" value="assign"/>
+                                                <Property name="destVarId" value="fail(L)"/>
                                             </ItemProperties>
                                             <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="84" version="1.2">
+                                    <ItemProperties/>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="62" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="type" value="collection.reset"/>
+                                                <Property name="destVarId" value="AllPhrases"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.VarCollIterator" id="63" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="varid" value="AllPhrases"/>
+                                            </ItemProperties>
+                                            <ChildItems>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="61" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="trace.varId" value="AllPhrases"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                            </ChildItems>
                                         </FlowItem>
                                     </ChildItems>
                                 </FlowItem>
@@ -82,23 +123,6 @@
                                             <ChildItems/>
                                         </FlowItem>
                                     </ChildItems>
-                                </FlowItem>
-                            </ChildItems>
-                        </FlowItem>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="55" version="1.2">
-                            <ItemProperties>
-                                <Property name="Operator" value="IsFalse"/>
-                                <Property name="LeftOperandFieldID" value="IsSuccess"/>
-                                <Property name="LeftOperandID" value="AllPhrases"/>
-                            </ItemProperties>
-                            <ChildItems>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="52" version="1.2">
-                                    <ItemProperties>
-                                        <Property name="sourceConstant" value="true"/>
-                                        <Property name="type" value="assign"/>
-                                        <Property name="destVarId" value="fail(L)"/>
-                                    </ItemProperties>
-                                    <ChildItems/>
                                 </FlowItem>
                             </ChildItems>
                         </FlowItem>

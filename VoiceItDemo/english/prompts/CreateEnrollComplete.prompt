@@ -11,7 +11,7 @@
             <ChildItems>
                 <Segment class="com.avaya.sce.prompts.internal.segment.Phrase" type="Phraseset">
                     <Properties>
-                        <Property name="Phrase" value="createenroll-0004"/>
+                        <Property name="Phrase" value="createenroll-0005"/>
                         <Property name="Phraseset" value="createenrollment"/>
                     </Properties>
                     <ChildItems/>

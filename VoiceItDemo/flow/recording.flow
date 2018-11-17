@@ -31,7 +31,7 @@
                             <ItemProperties>
                                 <Property name="Name" value="Recording"/>
                                 <Property name="name.bound" value="true"/>
-                                <Property name="FinalSilence" value="3s"/>
+                                <Property name="MaxRecordTime" value="5s"/>
                                 <Property name="DtmfTerminate" value="false"/>
                                 <Property name="PlayBeep" value="true"/>
                             </ItemProperties>
@@ -96,7 +96,7 @@
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="11" version="3.1">
                 <Property name="Name" value="Default"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="156"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="912"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="792"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SymbolicNode" id="29" version="3.1">
                 <Property name="ReferencedNodeID" value="4"/>

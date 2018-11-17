@@ -7,6 +7,7 @@ file may be preserved, it is best to manage this file through the application de
 Copyright 2004-2011 Avaya Inc.
 --><!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
 <web-app id="WebApp_ID">
+	<display-name>VoiceIt API 2.0 Demo</display-name>
     <context-param>
         <param-name>sage.startlanguage</param-name>
         <param-value>english</param-value>
@@ -63,6 +64,10 @@ Copyright 2004-2011 Avaya Inc.
         <description>Grammar caching mode, none=no caching, default=system default or property setting</description>
     </context-param>
     
+    <context-param>
+    	<param-name>tech.topcat.voiceit_tech.demo.PROPERTY_FILE</param-name>
+    	<param-value>profilemap.properties</param-value>
+    </context-param>
     
     <context-param>
         <param-name>com.voiceit_tech.api2.defaultLanguage</param-name>
@@ -71,12 +76,12 @@ Copyright 2004-2011 Avaya Inc.
     </context-param>
     <context-param>
         <param-name>com.voiceit_tech.api2.apiKey</param-name>
-        <param-value>key_49a2d76b0e4b44bdbeeeb3b6f293ac14</param-value>
+        <param-value>SET TO KNOWN VOICEIT API KEY</param-value>
         <description>DO NOT MODIFY</description>
     </context-param>
     <context-param>
         <param-name>com.voiceit_tech.api2.apiToken</param-name>
-        <param-value>tok_5b905b489b304c2aad2b717e27452139</param-value>
+        <param-value>SET TO KNOWN VOICEIT API TOKEN</param-value>
         <description>DO NOT MODIFY</description>
     </context-param>
     <servlet id="avayadefaultdisconnecthandler-servlet">
@@ -370,10 +375,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.subflow.createenrollment.Greeting</servlet-class>
     </servlet>
     
-    <servlet id="SAGE-callflow-servlet_createenrollment_112">
-        <servlet-name>createenrollment-InformRemaining</servlet-name>
-        <servlet-class>flow.subflow.createenrollment.InformRemaining</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_voiceverification_55">
         <servlet-name>voiceverification-Greeting</servlet-name>
         <servlet-class>flow.subflow.voiceverification.Greeting</servlet-class>
@@ -685,10 +687,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>createenrollment-Greeting</servlet-name>
         <url-pattern>/createenrollment-Greeting</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_112">
-        <servlet-name>createenrollment-InformRemaining</servlet-name>
-        <url-pattern>/createenrollment-InformRemaining</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_voiceverification_55">
         <servlet-name>voiceverification-Greeting</servlet-name>
         <url-pattern>/voiceverification-Greeting</url-pattern>

@@ -10,6 +10,6 @@
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-07.00.18.01.jar"/>
-	<classpathentry kind="lib" path="WEB-INF/lib/VoiceIt2RT-02.00.27.jar" sourcepath="C:/Users/michael/Documents/TCTS/SourceCode/VoiceIT/7.0.1.0804/avaya/workspace/avaya/com.voiceit_tech.od.rt/src"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/VoiceIt2RT-02.00.29.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

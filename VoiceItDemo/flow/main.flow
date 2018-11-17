@@ -55,14 +55,6 @@
                         <Property name="StartNodeID" value="63"/>
                     </ItemProperties>
                     <ChildItems>
-                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Property" id="213" version="1.2">
-                            <ItemProperties>
-                                <Property name="fetchaudio" value="BackgroundTransitional"/>
-                                <Property name="fetchaudiominimum" value="1s"/>
-                                <Property name="fetchaudiodelay" value="3s"/>
-                            </ItemProperties>
-                            <ChildItems/>
-                        </FlowItem>
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.OnDisconnect" id="144" version="1.2">
                             <ItemProperties>
                                 <Property name="LinkedNodeID" value="145"/>

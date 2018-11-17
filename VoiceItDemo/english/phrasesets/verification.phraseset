@@ -3,7 +3,7 @@
     <phrase version="1.0">
         <displayname>verify-0000</displayname>
         <talent/>
-        <phrasetext>We are about to begin the voice verification process. When you are ready, you will be told a phrase to repeat. After you have spoken the phrase, we'll find out if VoiceIt has successfully verified you.</phrasetext>
+        <phrasetext>You are about to begin the voice verification process. When prompted, please repeat the given phrase in a clear voice.</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -21,7 +21,7 @@
     <phrase version="1.0">
         <displayname>verify-0002</displayname>
         <talent/>
-        <phrasetext>You're voice was successfully analysed and you have been verified as the person associated with this telephone number.</phrasetext>
+        <phrasetext>You have successfully verified.</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
@@ -30,9 +30,7 @@
     <phrase version="1.0">
         <displayname>verify-0003</displayname>
         <talent/>
-        <phrasetext>Your voice has been successfully analysed and you have failed verification.&#13;
-If you are the person this telephone number is associated with, a failure can sometimes happen if you're speaking too softly or not clearly enough.&#13;
-If you are not the person associated with this telephone number, the verification process is successful.</phrasetext>
+        <phrasetext>Verification failed, please try again.</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments>Emphasis on the word "not" in the last sentence.</comments>

@@ -3,8 +3,9 @@
     <phrase version="1.0">
         <displayname>createenroll-0000</displayname>
         <talent/>
-        <phrasetext>The enrollment process analyses your voice biometrics to create a baseline that can be used for future verifications.&#13;
-The process requires a minimum of 3 successful analysis. Be sure to speak in a clear voice during the process.</phrasetext>
+        <phrasetext>The enrollment process analyzes your voice to create a baseline that will be used for future verifications.&#13;
+The process requires a minimum of 3 successful enrollments. Be sure to speak in a clear voice during the enrollment process.&#13;
+</phrasetext>
         <basetext/>
         <searchkeywords/>
         <comments/>
