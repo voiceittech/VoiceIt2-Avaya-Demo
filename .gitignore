@@ -1,1 +1,11 @@
 *.DS_Store*
+*.class
+work
+data/prompts/cache
+data/temp
+data/log
+flow/backup
+work
+WEB-INF/profilemap.properties
+*.jar
+!WEB-INF/lib/**/*.jar

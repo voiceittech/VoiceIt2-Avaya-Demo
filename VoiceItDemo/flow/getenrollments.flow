@@ -6,7 +6,7 @@
                 <Property name="Name" value="InformComplete"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="60"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="1140"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="972"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="52" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -46,11 +46,6 @@
                 <Property name="Name" value="Error"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="144"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="528"/>
-            </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="21" version="3.1">
-                <Property name="Name" value="Default"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="61"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="1468"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
                 <Property name="Name" value="VoiceItAPI"/>
@@ -95,16 +90,16 @@
                                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="71" version="1.2">
                                                     <ItemProperties>
                                                         <Property name="Operator" value="IsTrue"/>
-                                                        <Property name="LeftOperandFieldID" value="API_Error"/>
                                                         <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
+                                                        <Property name="LeftOperandFieldID" value="API_Error"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
                                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="72" version="1.2">
                                                     <ItemProperties>
                                                         <Property name="Operator" value="IsFalse"/>
-                                                        <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
                                                         <Property name="LeftOperandFieldID" value="IsSuccess"/>
+                                                        <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
@@ -185,16 +180,21 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="21" version="3.1">
+                <Property name="Name" value="Default"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="60"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1188"/>
+            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="20" version="3.1">
                 <Property name="Name" value="Incomplete"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="144"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="1524"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1200"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="57" version="3.1">
                 <Property name="Name" value="InformIncomplete"/>
                 <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="144"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="1140"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="972"/>
                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="58" version="1.2">
                     <ItemProperties/>
                     <ChildItems>
@@ -255,8 +255,8 @@
                                                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="35" version="1.2">
                                                             <ItemProperties>
                                                                 <Property name="Operator" value="IsEmpty"/>
-                                                                <Property name="LeftOperandID" value="phraseInfo"/>
                                                                 <Property name="LeftOperandFieldID" value="phrase"/>
+                                                                <Property name="LeftOperandID" value="phraseInfo"/>
                                                             </ItemProperties>
                                                             <ChildItems/>
                                                         </FlowItem>
@@ -265,8 +265,8 @@
                                                                 <Property name="RightVarOperandID" value="phraseInfo"/>
                                                                 <Property name="Operator" value="&gt;"/>
                                                                 <Property name="RightVarOperandFieldID" value="count"/>
-                                                                <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
                                                                 <Property name="LeftOperandFieldID" value="count"/>
+                                                                <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
                                                             </ItemProperties>
                                                             <ChildItems/>
                                                         </FlowItem>
@@ -277,8 +277,8 @@
                                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                                         <Property name="destFieldId" value="count"/>
                                                         <Property name="type" value="assign"/>
-                                                        <Property name="destVarId" value="phraseInfo"/>
                                                         <Property name="sourceFieldId" value="count"/>
+                                                        <Property name="destVarId" value="phraseInfo"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
@@ -287,8 +287,8 @@
                                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                                         <Property name="destFieldId" value="phrase"/>
                                                         <Property name="type" value="assign"/>
-                                                        <Property name="destVarId" value="phraseInfo"/>
                                                         <Property name="sourceFieldId" value="text"/>
+                                                        <Property name="destVarId" value="phraseInfo"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
@@ -306,8 +306,8 @@
                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                         <Property name="destFieldId" value="count"/>
                                         <Property name="type" value="assign"/>
-                                        <Property name="sourceFieldId" value="count"/>
                                         <Property name="destVarId" value="phraseInfo"/>
+                                        <Property name="sourceFieldId" value="count"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -316,8 +316,8 @@
                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                         <Property name="destFieldId" value="phrase"/>
                                         <Property name="type" value="assign"/>
-                                        <Property name="sourceFieldId" value="text"/>
                                         <Property name="destVarId" value="phraseInfo"/>
+                                        <Property name="sourceFieldId" value="text"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -327,8 +327,8 @@
                             <ItemProperties>
                                 <Property name="RightVarOperandID" value="THRESHOLD_ENROLL"/>
                                 <Property name="Operator" value="&gt;="/>
-                                <Property name="LeftOperandFieldID" value="count"/>
                                 <Property name="LeftOperandID" value="phraseInfo"/>
+                                <Property name="LeftOperandFieldID" value="count"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="46" version="1.2">
