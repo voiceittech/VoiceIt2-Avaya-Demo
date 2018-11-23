@@ -158,7 +158,7 @@ public class Recording extends com.avaya.sce.runtime.Form {
 		events.add(event);
 
 		// create the record item
-		record = new com.avaya.sce.runtime.Record("Recording", true, "60s", true, "3s", false, com.avaya.sce.runtime.Record.WAV_TYPE, com.avaya.sce.runtime.Record.RECORDMODE_AUDIO, promptNames, grammarInfo, events);
+		record = new com.avaya.sce.runtime.Record("Recording", true, "5s", true, "3s", false, com.avaya.sce.runtime.Record.WAV_TYPE, com.avaya.sce.runtime.Record.RECORDMODE_AUDIO, promptNames, grammarInfo, events);
 		return record;
 	}
 	/**
