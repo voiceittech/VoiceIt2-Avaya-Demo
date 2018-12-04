@@ -79,26 +79,15 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 		try {
 			actions = new java.util.ArrayList(2);
 
-			//{{START:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.voice.verification
-			actions.add(new com.voiceit_tech.od.api2.operations.VoiceVerification("VoiceVerificationResult", "userId", "phraseInfo:phrase", "Recording:value", "").setDebugId(89));
-			//}}END:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.voice.verification
+			//{{START:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.voice.verification
+			actions.add(new tech.topcat.od.voiceit.api2.operations.VoiceVerification("VoiceVerificationResult", "userId", "phraseInfo:phrase", "Recording:value", "").setDebugId(90));
+			//}}END:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.voice.verification
 
 			actions.add(new com.avaya.sce.runtime.tracking.TraceInfo(com.avaya.sce.runtimecommon.ITraceInfo.TRACE_LEVEL_DEBUG, "", "VoiceVerificationResult").setDebugId(31));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
 			actions = null;
-
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "VoiceVerificationResult:API_Error", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(34)).evaluate(mySession)) {
-				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.varoperations.Assign("fail(L)", "true", true).setDebugId(35));
-				if(evaluateActions(actions, mySession)) {
-					return true;
-				}
-				actions = null;
-
-			}
-
 		} catch (Exception e1) {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.CaptureException(e1).setDebugId(-1));
@@ -110,9 +99,9 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 		}
 
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(36)).evaluate(mySession)) {
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(36)).evaluate(mySession)) {
 
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "VoiceVerificationResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(50)).evaluate(mySession)) {
+			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "VoiceVerificationResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(50)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(1);
 				actions.add(new com.avaya.sce.runtime.Next("voiceverification-InformSuccess", "Success").setDebugId(37));
 				if(evaluateActions(actions, mySession)) {

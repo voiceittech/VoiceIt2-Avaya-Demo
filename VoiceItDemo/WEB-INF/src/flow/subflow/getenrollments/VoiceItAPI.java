@@ -78,31 +78,30 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 		actions = null;
 		try {
 			actions = new java.util.ArrayList(1);
-			com.avaya.sce.runtime.BooleanOperation bo1 = new com.avaya.sce.runtime.BooleanOperation(com.avaya.sce.runtime.BooleanOperation.OR);
-			com.avaya.sce.runtime.Expression be1 = new com.avaya.sce.runtime.Expression("expression1", "GetEnrollmentsResult:API_Error", com.avaya.sce.runtime.Expression.IS_TRUE);
-			bo1.addExpression(be1);
-			com.avaya.sce.runtime.Expression be2 = new com.avaya.sce.runtime.Expression("expression2", "GetEnrollmentsResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_FALSE);
-			bo1.addExpression(be2);
 
-			//{{START:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.voice.getEnrollments
-			actions.add(new com.voiceit_tech.od.api2.operations.GetVoiceEnrollments("GetEnrollmentsResult", "userId").setDebugId(25));
-			//}}END:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.voice.getEnrollments
+			//{{START:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.voice.getEnrollments
+			actions.add(new tech.topcat.od.voiceit.api2.operations.GetVoiceEnrollments("GetEnrollmentsResult", "userId").setDebugId(73));
+			//}}END:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.voice.getEnrollments
 
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
 			actions = null;
+		} catch (Exception e1) {
+			actions = new java.util.ArrayList(2);
+			actions.add(new com.avaya.sce.runtime.varoperations.CaptureException(e1).setDebugId(-1));
+			actions.add(new com.avaya.sce.runtime.varoperations.Assign("fail(L)", "true", true).setDebugId(14));
+			if(evaluateActions(actions, mySession)) {
+				return true;
+			}
+			actions = null;
+		}
 
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition").setDebugId(69)).evaluate(mySession, bo1)) {
-				actions = new java.util.ArrayList(2);
-				actions.add(new com.avaya.sce.runtime.varoperations.Assign("fail(L)", "true", true).setDebugId(67));
-				if(evaluateActions(actions, mySession)) {
-					return true;
-				}
-				actions = null;
 
-			} else {
-				actions = new java.util.ArrayList(2);
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(17)).evaluate(mySession)) {
+
+			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "GetEnrollmentsResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(69)).evaluate(mySession)) {
+				actions = new java.util.ArrayList(3);
 				actions.add(new com.avaya.sce.runtime.varoperations.ResetCollection("GetEnrollmentsResult").setDebugId(10));
 				if(evaluateActions(actions, mySession)) {
 					return true;
@@ -118,23 +117,18 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 					actions = null;
 				}
 
+
+				actions = new java.util.ArrayList(1);
+				actions.add(new com.avaya.sce.runtime.Next("getenrollments-DetermineUsablePhrase", "Success").setDebugId(74));
+				if(evaluateActions(actions, mySession)) {
+					return true;
+				}
+				actions = null;
+
 			}
 
-
-		} catch (Exception e1) {
-			actions = new java.util.ArrayList(2);
-			actions.add(new com.avaya.sce.runtime.varoperations.CaptureException(e1).setDebugId(-1));
-			actions.add(new com.avaya.sce.runtime.varoperations.Assign("fail(L)", "true", true).setDebugId(14));
-			if(evaluateActions(actions, mySession)) {
-				return true;
-			}
-			actions = null;
-		}
-
-
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(17)).evaluate(mySession)) {
 			actions = new java.util.ArrayList(1);
-			actions.add(new com.avaya.sce.runtime.Next("getenrollments-DetermineUsablePhrase", "Success").setDebugId(18));
+			actions.add(new com.avaya.sce.runtime.Next("getenrollments-InformFail", "Fail").setDebugId(18));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}

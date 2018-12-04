@@ -1,217 +1,193 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <projectvariables>
-    <variable factoryID="" name="AllPhrases:API_Error" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:contentLanguage" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:contentLanguage" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:count" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:count" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:IsSuccess" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:IsSuccess" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:message" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:message" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:responseCode" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:responseCode" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:status" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:status" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:text" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:text" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="AllPhrases:timeTaken" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getPhrasesVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="AllPhrases:timeTaken" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getPhrasesVarType" value="" version="1.0">
+    <variable factoryID="" name="CheckUserExistsResult:exists" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.checkUserExistsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CheckUserExistsResult:API_Error" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.checkUserExistsVarType" value="" version="1.0">
+    <variable factoryID="" name="CheckUserExistsResult:IsSuccess" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.checkUserExistsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CheckUserExistsResult:exists" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.checkUserExistsVarType" value="" version="1.0">
+    <variable factoryID="" name="CheckUserExistsResult:message" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.checkUserExistsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CheckUserExistsResult:IsSuccess" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.checkUserExistsVarType" value="" version="1.0">
+    <variable factoryID="" name="CheckUserExistsResult:responseCode" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.checkUserExistsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CheckUserExistsResult:message" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.checkUserExistsVarType" value="" version="1.0">
+    <variable factoryID="" name="CheckUserExistsResult:status" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.checkUserExistsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CheckUserExistsResult:responseCode" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.checkUserExistsVarType" value="" version="1.0">
+    <variable factoryID="" name="CheckUserExistsResult:timeTaken" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.checkUserExistsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CheckUserExistsResult:status" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.checkUserExistsVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:contentLanguage" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CheckUserExistsResult:timeTaken" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.checkUserExistsVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:createdAt" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:API_Error" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:id" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:contentLanguage" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:IsSuccess" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:createdAt" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:message" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:id" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:responseCode" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:IsSuccess" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:status" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:message" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:text" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:responseCode" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:textConfidence" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:status" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateEnrollmentResult:timeTaken" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createEnrollmentVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:text" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
-        <editpolicies>
             <policy name="deleteable" value="false"/>
-            <policy name="appendable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:textConfidence" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="deleteable" value="false"/>
-            <policy name="appendable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="CreateEnrollmentResult:timeTaken" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createEnrollmentVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="deleteable" value="false"/>
-            <policy name="appendable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
@@ -280,7 +256,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateUserResult:API_Error" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateUserResult:createdAt" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -288,7 +264,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateUserResult:createdAt" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateUserResult:IsSuccess" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -296,7 +272,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateUserResult:IsSuccess" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateUserResult:message" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -304,7 +280,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateUserResult:message" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateUserResult:responseCode" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -312,7 +288,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateUserResult:responseCode" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateUserResult:status" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -320,7 +296,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateUserResult:status" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateUserResult:timeTaken" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -328,15 +304,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="CreateUserResult:timeTaken" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="deleteable" value="false"/>
-            <policy name="appendable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="CreateUserResult:userId" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.createUserVarType" value="" version="1.0">
+    <variable factoryID="" name="CreateUserResult:userId" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.createUserVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -520,90 +488,82 @@
     <variable factoryID="" name="enrollmentsRemaining" owner="" type="" value="0" version="1.0">
         <property name="datatype" value="Integer"/>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:API_Error" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:contentLanguage" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:contentLanguage" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:count" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:count" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:createdAt" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:createdAt" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:IsSuccess" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:IsSuccess" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:message" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:message" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:responseCode" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:responseCode" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:status" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:status" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:text" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:text" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:timeTaken" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
+            <policy name="deleteable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:timeTaken" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
+    <variable factoryID="" name="GetEnrollmentsResult:voiceEnrollmentId" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.getVoiceEnrollmentsVarType" value="" version="1.0">
         <editpolicies>
-            <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="GetEnrollmentsResult:voiceEnrollmentId" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.getVoiceEnrollmentsVarType" value="" version="1.0">
-        <editpolicies>
             <policy name="deleteable" value="false"/>
-            <policy name="appendable" value="false"/>
             <policy name="renameable" value="false"/>
             <policy name="opaque" value="true"/>
         </editpolicies>
@@ -1194,7 +1154,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:API_Error" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:confidence" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -1202,7 +1162,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:confidence" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:IsSuccess" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -1210,7 +1170,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:IsSuccess" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:message" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -1218,7 +1178,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:message" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:responseCode" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -1226,7 +1186,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:responseCode" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:status" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -1234,7 +1194,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:status" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:text" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -1242,7 +1202,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:text" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:textConfidence" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>
@@ -1250,15 +1210,7 @@
             <policy name="opaque" value="true"/>
         </editpolicies>
     </variable>
-    <variable factoryID="" name="VoiceVerificationResult:textConfidence" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
-        <editpolicies>
-            <policy name="deleteable" value="false"/>
-            <policy name="appendable" value="false"/>
-            <policy name="renameable" value="false"/>
-            <policy name="opaque" value="true"/>
-        </editpolicies>
-    </variable>
-    <variable factoryID="" name="VoiceVerificationResult:timeTaken" owner="com.avaya.sce.callflow" type="com.voiceit_tech.od.voiceVerificationVarType" value="" version="1.0">
+    <variable factoryID="" name="VoiceVerificationResult:timeTaken" owner="com.avaya.sce.callflow" type="tech.topcat.od.voiceit.api2.voiceVerificationVarType" value="" version="1.0">
         <editpolicies>
             <policy name="deleteable" value="false"/>
             <policy name="appendable" value="false"/>

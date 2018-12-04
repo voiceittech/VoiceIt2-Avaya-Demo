@@ -71,7 +71,6 @@ public interface IProjectVariables {
 	public static final String REDIRECTINFO_FIELD_REASON = "reason";
 	public static final String REDIRECTINFO_FIELD_SCREENINGINFO = "screeninginfo";
 	public static final String REDIRECTINFO_FIELD_URI = "uri";
-	public static final String ALL_PHRASES_FIELD_API__ERROR = "API_Error";
 	public static final String ALL_PHRASES_FIELD_CONTENT_LANGUAGE = "contentLanguage";
 	public static final String ALL_PHRASES_FIELD_COUNT = "count";
 	public static final String ALL_PHRASES_FIELD_IS_SUCCESS = "IsSuccess";
@@ -135,7 +134,6 @@ public interface IProjectVariables {
 	public static final String CREATE_ENROLL_READY_PROMPT_FIELD_NOMATCHCOUNT = "nomatchcount";
 	public static final String CREATE_ENROLL_READY_PROMPT_FIELD_UTTERANCE = "utterance";
 	public static final String CREATE_ENROLL_READY_PROMPT_FIELD_VALUE = "value";
-	public static final String VOICE_VERIFICATION_RESULT_FIELD_API__ERROR = "API_Error";
 	public static final String VOICE_VERIFICATION_RESULT_FIELD_CONFIDENCE = "confidence";
 	public static final String VOICE_VERIFICATION_RESULT_FIELD_IS_SUCCESS = "IsSuccess";
 	public static final String VOICE_VERIFICATION_RESULT_FIELD_MESSAGE = "message";
@@ -144,7 +142,6 @@ public interface IProjectVariables {
 	public static final String VOICE_VERIFICATION_RESULT_FIELD_TEXT = "text";
 	public static final String VOICE_VERIFICATION_RESULT_FIELD_TEXT_CONFIDENCE = "textConfidence";
 	public static final String VOICE_VERIFICATION_RESULT_FIELD_TIME_TAKEN = "timeTaken";
-	public static final String CREATE_ENROLLMENT_RESULT_FIELD_API__ERROR = "API_Error";
 	public static final String CREATE_ENROLLMENT_RESULT_FIELD_CONTENT_LANGUAGE = "contentLanguage";
 	public static final String CREATE_ENROLLMENT_RESULT_FIELD_CREATED_AT = "createdAt";
 	public static final String CREATE_ENROLLMENT_RESULT_FIELD_ID = "id";
@@ -155,7 +152,6 @@ public interface IProjectVariables {
 	public static final String CREATE_ENROLLMENT_RESULT_FIELD_TEXT = "text";
 	public static final String CREATE_ENROLLMENT_RESULT_FIELD_TEXT_CONFIDENCE = "textConfidence";
 	public static final String CREATE_ENROLLMENT_RESULT_FIELD_TIME_TAKEN = "timeTaken";
-	public static final String GET_ENROLLMENTS_RESULT_FIELD_API__ERROR = "API_Error";
 	public static final String GET_ENROLLMENTS_RESULT_FIELD_CONTENT_LANGUAGE = "contentLanguage";
 	public static final String GET_ENROLLMENTS_RESULT_FIELD_COUNT = "count";
 	public static final String GET_ENROLLMENTS_RESULT_FIELD_CREATED_AT = "createdAt";
@@ -171,7 +167,6 @@ public interface IProjectVariables {
 	public static final String DD_LAST_EXCEPTION_FIELD_OBJECT = "object";
 	public static final String DD_LAST_EXCEPTION_FIELD_STACKTRACE = "stacktrace";
 	public static final String DD_LAST_EXCEPTION_FIELD_TYPE = "type";
-	public static final String CHECK_USER_EXISTS_RESULT_FIELD_API__ERROR = "API_Error";
 	public static final String CHECK_USER_EXISTS_RESULT_FIELD_EXISTS = "exists";
 	public static final String CHECK_USER_EXISTS_RESULT_FIELD_IS_SUCCESS = "IsSuccess";
 	public static final String CHECK_USER_EXISTS_RESULT_FIELD_MESSAGE = "message";
@@ -180,7 +175,6 @@ public interface IProjectVariables {
 	public static final String CHECK_USER_EXISTS_RESULT_FIELD_TIME_TAKEN = "timeTaken";
 	public static final String PHRASE_INFO_FIELD_COUNT = "count";
 	public static final String PHRASE_INFO_FIELD_PHRASE = "phrase";
-	public static final String CREATE_USER_RESULT_FIELD_API__ERROR = "API_Error";
 	public static final String CREATE_USER_RESULT_FIELD_CREATED_AT = "createdAt";
 	public static final String CREATE_USER_RESULT_FIELD_IS_SUCCESS = "IsSuccess";
 	public static final String CREATE_USER_RESULT_FIELD_MESSAGE = "message";

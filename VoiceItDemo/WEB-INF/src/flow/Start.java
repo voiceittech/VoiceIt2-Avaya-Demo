@@ -78,7 +78,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.ALL_PHRASES_FIELD_API__ERROR,
 			IProjectVariables.ALL_PHRASES_FIELD_CONTENT_LANGUAGE,
 			IProjectVariables.ALL_PHRASES_FIELD_COUNT,
 			IProjectVariables.ALL_PHRASES_FIELD_IS_SUCCESS,
@@ -158,7 +157,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.VOICE_VERIFICATION_RESULT_FIELD_API__ERROR,
 			IProjectVariables.VOICE_VERIFICATION_RESULT_FIELD_CONFIDENCE,
 			IProjectVariables.VOICE_VERIFICATION_RESULT_FIELD_IS_SUCCESS,
 			IProjectVariables.VOICE_VERIFICATION_RESULT_FIELD_MESSAGE,
@@ -174,7 +172,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.CREATE_ENROLLMENT_RESULT_FIELD_API__ERROR,
 			IProjectVariables.CREATE_ENROLLMENT_RESULT_FIELD_CONTENT_LANGUAGE,
 			IProjectVariables.CREATE_ENROLLMENT_RESULT_FIELD_CREATED_AT,
 			IProjectVariables.CREATE_ENROLLMENT_RESULT_FIELD_ID,
@@ -192,7 +189,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.GET_ENROLLMENTS_RESULT_FIELD_API__ERROR,
 			IProjectVariables.GET_ENROLLMENTS_RESULT_FIELD_CONTENT_LANGUAGE,
 			IProjectVariables.GET_ENROLLMENTS_RESULT_FIELD_COUNT,
 			IProjectVariables.GET_ENROLLMENTS_RESULT_FIELD_CREATED_AT,
@@ -219,7 +215,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.CHECK_USER_EXISTS_RESULT_FIELD_API__ERROR,
 			IProjectVariables.CHECK_USER_EXISTS_RESULT_FIELD_EXISTS,
 			IProjectVariables.CHECK_USER_EXISTS_RESULT_FIELD_IS_SUCCESS,
 			IProjectVariables.CHECK_USER_EXISTS_RESULT_FIELD_MESSAGE,
@@ -236,7 +231,6 @@ public class Start extends com.avaya.sce.runtime.Entry {
 		session.putVariable(variable);
 
 		variableFields = new String[] {
-			IProjectVariables.CREATE_USER_RESULT_FIELD_API__ERROR,
 			IProjectVariables.CREATE_USER_RESULT_FIELD_CREATED_AT,
 			IProjectVariables.CREATE_USER_RESULT_FIELD_IS_SUCCESS,
 			IProjectVariables.CREATE_USER_RESULT_FIELD_MESSAGE,

@@ -79,26 +79,15 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 		try {
 			actions = new java.util.ArrayList(2);
 
-			//{{START:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.voice.createEnrollment
-			actions.add(new com.voiceit_tech.od.api2.operations.CreateVoiceEnrollment("CreateEnrollmentResult", "userId", "phraseInfo:phrase", "Recording:value", "").setDebugId(7));
-			//}}END:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.voice.createEnrollment
+			//{{START:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.voice.createEnrollment
+			actions.add(new tech.topcat.od.voiceit.api2.operations.CreateVoiceEnrollment("CreateEnrollmentResult", "userId", "phraseInfo:phrase", "Recording:value", "").setDebugId(144));
+			//}}END:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.voice.createEnrollment
 
 			actions.add(new com.avaya.sce.runtime.tracking.TraceInfo(com.avaya.sce.runtimecommon.ITraceInfo.TRACE_LEVEL_DEBUG, "", "CreateEnrollmentResult").setDebugId(22));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
 			actions = null;
-
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "CreateEnrollmentResult:API_Error", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(32)).evaluate(mySession)) {
-				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.varoperations.Assign("fail(L)", "true", true).setDebugId(33));
-				if(evaluateActions(actions, mySession)) {
-					return true;
-				}
-				actions = null;
-
-			}
-
 		} catch (Exception e1) {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.CaptureException(e1).setDebugId(-1));
@@ -110,9 +99,9 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 		}
 
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(16)).evaluate(mySession)) {
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(16)).evaluate(mySession)) {
 
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "CreateEnrollmentResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(14)).evaluate(mySession)) {
+			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "CreateEnrollmentResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(14)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(1);
 				actions.add(new com.avaya.sce.runtime.Next("createenrollment-InformSuccess", "Success").setDebugId(17));
 				if(evaluateActions(actions, mySession)) {

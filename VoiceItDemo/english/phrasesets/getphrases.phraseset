@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="getphrases" version="1.0">
+    <phrase version="1.0">
+        <displayname>getphrases-0000</displayname>
+        <talent/>
+        <phrasetext>I'm sorry. I could not retrieve a list of phrases available.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>getphrases-0000.wav</audiofile>
+    </phrase>
+</phraseset>

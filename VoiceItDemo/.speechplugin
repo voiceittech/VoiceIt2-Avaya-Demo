@@ -41,9 +41,9 @@
         <propertystore id="pluggableconnectors" version="1.0">
             <propertymap/>
             <nestedpropertystore>
-                <propertystore id="comvoiceit_techodpluginsui" version="1.0">
+                <propertystore id="techtopcatodadevoiceitapi2" version="1.0">
                     <propertymap>
-                        <property name="connectorId" value="com.voiceit_tech.od.plugins.ui" version="1.0"/>
+                        <property name="connectorId" value="tech.topcat.od.ade.voiceit.api2" version="1.0"/>
                         <property name="currentVersion" value="2" version="1.0"/>
                         <property name="displayName" value="VoiceIt™ API 2.0 Functionality" version="1.0"/>
                     </propertymap>
