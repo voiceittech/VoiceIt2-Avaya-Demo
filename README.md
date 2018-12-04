@@ -35,11 +35,10 @@ Refer to **Voice Plug-in for Orchestration Designer** topic in the Eclipse built
 
 ## Implemented functions:
 
-- Get User -- Retrieves an existing user profile within the Voiceprint Developer Portal (VPDP) service.
-- Create User -- Registers a new user profile within the Voiceprint Developer Portal (VPDP) service.
-- Delete User -- Delete an existing user profile within the Voiceprint Developer Portal (VPDP) service.
-- Get Enrollments -- Retrieves the existing enrollment template(s) for the specified user profile within the Voiceprint Developer Portal (VPDP) service.
-- Create Enrollment -- Creates a new enrollment template for the specified user profile within the Voiceprint Developer Portal (VPDP) service.
-- Delete Enrollment -- Delete an existing enrollment template for the specified user profile within the Voiceprint Developer Portal (VPDP) service.
-- Authenticate -- Authenticate the specified user profile within the Voiceprint Developer Portal (VPDP) service.
+- Check User Exists -- Verifies the specified VoiceIt profile id is valid with the the Voice Biometric Portal (VBP) service.
+- Create User -- Registers a new user profile within the the Voice Biometric Portal (VBP) service.
+- Get Enrollments -- Retrieves the existing enrollment template(s) for the specified user profile within the the Voice Biometric Portal (VBP) service.
+- Create Enrollment -- Creates a new enrollment template for the specified user profile within the the Voice Biometric Portal (VBP) service.
+- Get Phrases -- Retrieves all of a developer's approved phrases for the specified language  from the Voice Biometric Portal (VBP) service.
+- Verification -- Verifies the specified user profile voice biometric within the the Voice Biometric Portal (VBP) service.
 - Set Language -- Sets the VoiceIt specific language to use for a previously mentioned function.

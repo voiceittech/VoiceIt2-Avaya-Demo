@@ -41,6 +41,7 @@ public class GetPhraseToSpeak extends com.avaya.sce.runtime.Subflow {
 		java.util.Map<String, String> exitPoints;
 		exitPoints = new java.util.HashMap<String, String>();
 		exitPoints.put("getphrases-Default", "createenrollment-Greeting");
+		exitPoints.put("getphrases-Fail", "createenrollment-Fail");
 		exitPoints.put("getphrases-Error", "createenrollment-Error");
 		return exitPoints;
 	}

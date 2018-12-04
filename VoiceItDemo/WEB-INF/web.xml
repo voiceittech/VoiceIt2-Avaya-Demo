@@ -84,6 +84,16 @@ Copyright 2004-2011 Avaya Inc.
         <param-value>SET TO KNOWN VOICEIT API TOKEN</param-value>
         <description>DO NOT MODIFY</description>
     </context-param>
+    <context-param>
+        <param-name>tech.topcat.od.voiceit.api2.apiKey</param-name>
+        <param-value>SET VALID DEVELOPER API KEY</param-value>
+        <description>DO NOT MODIFY</description>
+    </context-param>
+    <context-param>
+        <param-name>tech.topcat.od.voiceit.api2.apiToken</param-name>
+        <param-value>SET VALID DEVELOPER API TOKEN</param-value>
+        <description>DO NOT MODIFY</description>
+    </context-param>
     <servlet id="avayadefaultdisconnecthandler-servlet">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <servlet-class>com.avaya.sce.runtime.DefaultDisconnect</servlet-class>
@@ -131,8 +141,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.subflow.getphrases.VoiceItAPI</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_getphrases_57">
-        <servlet-name>getphrases-Error</servlet-name>
-        <servlet-class>flow.subflow.getphrases.Error</servlet-class>
+        <servlet-name>getphrases-Fail</servlet-name>
+        <servlet-class>flow.subflow.getphrases.Fail</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_getphrases_56">
         <servlet-name>getphrases-Default</servlet-name>
@@ -212,8 +222,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.subflow.createenrollment.Begin</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_createenrollment_19">
-        <servlet-name>createenrollment-Error</servlet-name>
-        <servlet-class>flow.subflow.createenrollment.Error</servlet-class>
+        <servlet-name>createenrollment-Fail</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.Fail</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_createenrollment_18">
         <servlet-name>createenrollment-Default</servlet-name>
@@ -257,10 +267,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CreateUser</servlet-name>
         <servlet-class>flow.CreateUser</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_checkexists_38">
-        <servlet-name>checkexists-Error</servlet-name>
-        <servlet-class>flow.subflow.checkexists.Error</servlet-class>
-    </servlet>
+    
     <servlet id="SAGE-callflow-servlet_checkexists_40">
         <servlet-name>checkexists-CheckExists</servlet-name>
         <servlet-class>flow.subflow.checkexists.CheckExists</servlet-class>
@@ -293,8 +300,8 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.SayGoodbye</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_getenrollments_48">
-        <servlet-name>getenrollments-Error</servlet-name>
-        <servlet-class>flow.subflow.getenrollments.Error</servlet-class>
+        <servlet-name>getenrollments-Fail</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.Fail</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_134">
         <servlet-name>VerifyCaller</servlet-name>
@@ -401,6 +408,35 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-class>flow.subflow.createenrollment.GetPhraseToSpeak</servlet-class>
     </servlet>
     
+    <servlet id="SAGE-callflow-servlet_checkexists_71">
+        <servlet-name>checkexists-Error</servlet-name>
+        <servlet-class>flow.subflow.checkexists.Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_checkexists_66">
+        <servlet-name>checkexists-InformFail</servlet-name>
+        <servlet-class>flow.subflow.checkexists.InformFail</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getenrollments_76">
+        <servlet-name>getenrollments-InformFail</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.InformFail</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getphrases_88">
+        <servlet-name>getphrases-InformFail</servlet-name>
+        <servlet-class>flow.subflow.getphrases.InformFail</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_getphrases_93">
+        <servlet-name>getphrases-Error</servlet-name>
+        <servlet-class>flow.subflow.getphrases.Error</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_createenrollment_147">
+        <servlet-name>createenrollment-Error</servlet-name>
+        <servlet-class>flow.subflow.createenrollment.Error</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_getenrollments_84">
+        <servlet-name>getenrollments-Error</servlet-name>
+        <servlet-class>flow.subflow.getenrollments.Error</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -447,8 +483,8 @@ Copyright 2004-2011 Avaya Inc.
         <url-pattern>/getphrases-VoiceItAPI</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_57">
-        <servlet-name>getphrases-Error</servlet-name>
-        <url-pattern>/getphrases-Error</url-pattern>
+        <servlet-name>getphrases-Fail</servlet-name>
+        <url-pattern>/getphrases-Fail</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_56">
         <servlet-name>getphrases-Default</servlet-name>
@@ -528,8 +564,8 @@ Copyright 2004-2011 Avaya Inc.
         <url-pattern>/createenrollment-Begin</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_19">
-        <servlet-name>createenrollment-Error</servlet-name>
-        <url-pattern>/createenrollment-Error</url-pattern>
+        <servlet-name>createenrollment-Fail</servlet-name>
+        <url-pattern>/createenrollment-Fail</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_18">
         <servlet-name>createenrollment-Default</servlet-name>
@@ -572,10 +608,7 @@ Copyright 2004-2011 Avaya Inc.
         <servlet-name>CreateUser</servlet-name>
         <url-pattern>/CreateUser</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_38">
-        <servlet-name>checkexists-Error</servlet-name>
-        <url-pattern>/checkexists-Error</url-pattern>
-    </servlet-mapping>
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_40">
         <servlet-name>checkexists-CheckExists</servlet-name>
         <url-pattern>/checkexists-CheckExists</url-pattern>
@@ -608,8 +641,8 @@ Copyright 2004-2011 Avaya Inc.
         <url-pattern>/SayGoodbye</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_48">
-        <servlet-name>getenrollments-Error</servlet-name>
-        <url-pattern>/getenrollments-Error</url-pattern>
+        <servlet-name>getenrollments-Fail</servlet-name>
+        <url-pattern>/getenrollments-Fail</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_134">
         <servlet-name>VerifyCaller</servlet-name>
@@ -711,6 +744,34 @@ Copyright 2004-2011 Avaya Inc.
     <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_121">
         <servlet-name>createenrollment-GetPhraseToSpeak</servlet-name>
         <url-pattern>/createenrollment-GetPhraseToSpeak</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_71">
+        <servlet-name>checkexists-Error</servlet-name>
+        <url-pattern>/checkexists-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_checkexists_66">
+        <servlet-name>checkexists-InformFail</servlet-name>
+        <url-pattern>/checkexists-InformFail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_76">
+        <servlet-name>getenrollments-InformFail</servlet-name>
+        <url-pattern>/getenrollments-InformFail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_88">
+        <servlet-name>getphrases-InformFail</servlet-name>
+        <url-pattern>/getphrases-InformFail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getphrases_93">
+        <servlet-name>getphrases-Error</servlet-name>
+        <url-pattern>/getphrases-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_createenrollment_147">
+        <servlet-name>createenrollment-Error</servlet-name>
+        <url-pattern>/createenrollment-Error</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_getenrollments_84">
+        <servlet-name>getenrollments-Error</servlet-name>
+        <url-pattern>/getenrollments-Error</url-pattern>
     </servlet-mapping>
     
     

@@ -42,6 +42,7 @@ public class GetEnrollments extends com.avaya.sce.runtime.Subflow {
 		exitPoints = new java.util.HashMap<String, String>();
 		exitPoints.put("getenrollments-Default", "VerifyCaller");
 		exitPoints.put("getenrollments-Incomplete", "CreateEnrollment");
+		exitPoints.put("getenrollments-Fail", "InformTryAgain");
 		exitPoints.put("getenrollments-Error", "InformAPIError");
 		return exitPoints;
 	}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="checkexist" version="1.0">
+    <phrase version="1.0">
+        <displayname>checkexist-0000</displayname>
+        <talent/>
+        <phrasetext>I'm sorry. I could not verify if the user profile exists. Let's create a new one now.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>checkexist-0000.wav</audiofile>
+    </phrase>
+</phraseset>

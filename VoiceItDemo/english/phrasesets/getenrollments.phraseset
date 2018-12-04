@@ -18,4 +18,13 @@
         <comments/>
         <audiofile>getenroll-0001.wav</audiofile>
     </phrase>
+    <phrase version="1.0">
+        <displayname>getenroll-0002</displayname>
+        <talent/>
+        <phrasetext>I'm sorry. I could not retrieve a list of enrollments.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>getenroll-0002.wav</audiofile>
+    </phrase>
 </phraseset>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <AppFlowDoc>
-    <ApplicationFlow nextObjectId="72" package="flow.subflow.getenrollments" version="5.0">
+    <ApplicationFlow nextObjectId="85" package="flow.subflow.getenrollments" version="5.0">
         <FlowGraph>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="51" version="3.1">
                 <Property name="Name" value="InformComplete"/>
@@ -25,6 +25,11 @@
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="84" version="3.1">
+                <Property name="Name" value="Error"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="204"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="528"/>
+            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubEntry" id="1" version="3.1">
                 <Property name="Name" value="Begin"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="60"/>
@@ -43,9 +48,14 @@
                 </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="48" version="3.1">
-                <Property name="Name" value="Error"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="144"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="528"/>
+                <Property name="Name" value="Fail"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="132"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="696"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="21" version="3.1">
+                <Property name="Name" value="Default"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="60"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="1188"/>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Data" id="4" version="3.1">
                 <Property name="Name" value="VoiceItAPI"/>
@@ -71,74 +81,13 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.TryBlock" id="8" version="1.2">
                             <ItemProperties/>
                             <ChildItems>
-                                <FlowItem class="com.voiceit_tech.od.plugins.api2.voice.getEnrollments" id="25" version="1.2">
+                                <FlowItem class="tech.topcat.od.voiceit.api2.voice.getEnrollments" id="73" version="1.2">
                                     <ItemProperties>
                                         <Property name="Name" value="GetEnrollmentsResult"/>
                                         <Property name="voiceit.getenrollments.userid.varname" value="userId"/>
-                                        <Property name="ext.type.id" value="com.voiceit_tech.od.plugins.api2.voice.getEnrollments"/>
+                                        <Property name="ext.type.id" value="tech.topcat.od.voiceit.api2.voice.getEnrollments"/>
                                     </ItemProperties>
                                     <ChildItems/>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="69" version="1.2">
-                                    <ItemProperties/>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanOperator" id="70" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="Operator" value="OR"/>
-                                            </ItemProperties>
-                                            <ChildItems>
-                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="71" version="1.2">
-                                                    <ItemProperties>
-                                                        <Property name="Operator" value="IsTrue"/>
-                                                        <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
-                                                        <Property name="LeftOperandFieldID" value="API_Error"/>
-                                                    </ItemProperties>
-                                                    <ChildItems/>
-                                                </FlowItem>
-                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="72" version="1.2">
-                                                    <ItemProperties>
-                                                        <Property name="Operator" value="IsFalse"/>
-                                                        <Property name="LeftOperandFieldID" value="IsSuccess"/>
-                                                        <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
-                                                    </ItemProperties>
-                                                    <ChildItems/>
-                                                </FlowItem>
-                                            </ChildItems>
-                                        </FlowItem>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="67" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="sourceConstant" value="true"/>
-                                                <Property name="type" value="assign"/>
-                                                <Property name="destVarId" value="fail(L)"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                    </ChildItems>
-                                </FlowItem>
-                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.ElseCondition" id="68" version="1.2">
-                                    <ItemProperties/>
-                                    <ChildItems>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="10" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="type" value="collection.reset"/>
-                                                <Property name="destVarId" value="GetEnrollmentsResult"/>
-                                            </ItemProperties>
-                                            <ChildItems/>
-                                        </FlowItem>
-                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.VarCollIterator" id="11" version="1.2">
-                                            <ItemProperties>
-                                                <Property name="varid" value="GetEnrollmentsResult"/>
-                                            </ItemProperties>
-                                            <ChildItems>
-                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="12" version="1.2">
-                                                    <ItemProperties>
-                                                        <Property name="trace.varId" value="GetEnrollmentsResult"/>
-                                                    </ItemProperties>
-                                                    <ChildItems/>
-                                                </FlowItem>
-                                            </ChildItems>
-                                        </FlowItem>
-                                    </ChildItems>
                                 </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.CatchBlock" id="13" version="1.2">
                                     <ItemProperties/>
@@ -161,10 +110,46 @@
                                 <Property name="LeftOperandID" value="fail(L)"/>
                             </ItemProperties>
                             <ChildItems>
+                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.IfCondition" id="69" version="1.2">
+                                    <ItemProperties>
+                                        <Property name="Operator" value="IsTrue"/>
+                                        <Property name="LeftOperandFieldID" value="IsSuccess"/>
+                                        <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
+                                    </ItemProperties>
+                                    <ChildItems>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Assignment" id="10" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="type" value="collection.reset"/>
+                                                <Property name="destVarId" value="GetEnrollmentsResult"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.VarCollIterator" id="11" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="varid" value="GetEnrollmentsResult"/>
+                                            </ItemProperties>
+                                            <ChildItems>
+                                                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Trace" id="12" version="1.2">
+                                                    <ItemProperties>
+                                                        <Property name="trace.varId" value="GetEnrollmentsResult"/>
+                                                    </ItemProperties>
+                                                    <ChildItems/>
+                                                </FlowItem>
+                                            </ChildItems>
+                                        </FlowItem>
+                                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="74" version="1.2">
+                                            <ItemProperties>
+                                                <Property name="Name" value="Success"/>
+                                                <Property name="LinkedNodeID" value="26"/>
+                                            </ItemProperties>
+                                            <ChildItems/>
+                                        </FlowItem>
+                                    </ChildItems>
+                                </FlowItem>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="18" version="1.2">
                                     <ItemProperties>
-                                        <Property name="Name" value="Success"/>
-                                        <Property name="LinkedNodeID" value="26"/>
+                                        <Property name="Name" value="Fail"/>
+                                        <Property name="LinkedNodeID" value="76"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -173,22 +158,40 @@
                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="19" version="1.2">
                             <ItemProperties>
                                 <Property name="Name" value="Default"/>
-                                <Property name="LinkedNodeID" value="48"/>
+                                <Property name="LinkedNodeID" value="84"/>
                             </ItemProperties>
                             <ChildItems/>
                         </FlowItem>
                     </ChildItems>
                 </FlowItem>
             </FlowNode>
-            <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="21" version="3.1">
-                <Property name="Name" value="Default"/>
-                <Property name="FlowNodeEditPart.WidgetY" value="60"/>
-                <Property name="FlowNodeEditPart.WidgetX" value="1188"/>
-            </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.SubReturn" id="20" version="3.1">
                 <Property name="Name" value="Incomplete"/>
                 <Property name="FlowNodeEditPart.WidgetY" value="144"/>
                 <Property name="FlowNodeEditPart.WidgetX" value="1200"/>
+            </FlowNode>
+            <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="76" version="3.1">
+                <Property name="Name" value="InformFail"/>
+                <Property name="FlowNodeEditPart.WidgetIcon" value="announce.gif"/>
+                <Property name="FlowNodeEditPart.WidgetY" value="132"/>
+                <Property name="FlowNodeEditPart.WidgetX" value="528"/>
+                <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Form" id="77" version="1.2">
+                    <ItemProperties/>
+                    <ChildItems>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Prompt" id="78" version="1.2">
+                            <ItemProperties>
+                                <Property name="Name" value="GetEnrollFail"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                        <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Submit" id="79" version="1.2">
+                            <ItemProperties>
+                                <Property name="LinkedNodeID" value="48"/>
+                            </ItemProperties>
+                            <ChildItems/>
+                        </FlowItem>
+                    </ChildItems>
+                </FlowItem>
             </FlowNode>
             <FlowNode class="com.avaya.sce.callflow.internal.appflow.Form" id="57" version="3.1">
                 <Property name="Name" value="InformIncomplete"/>
@@ -255,8 +258,8 @@
                                                         <FlowItem class="com.avaya.sce.callflow.internal.flowitem.BooleanExpression" id="35" version="1.2">
                                                             <ItemProperties>
                                                                 <Property name="Operator" value="IsEmpty"/>
-                                                                <Property name="LeftOperandFieldID" value="phrase"/>
                                                                 <Property name="LeftOperandID" value="phraseInfo"/>
+                                                                <Property name="LeftOperandFieldID" value="phrase"/>
                                                             </ItemProperties>
                                                             <ChildItems/>
                                                         </FlowItem>
@@ -265,8 +268,8 @@
                                                                 <Property name="RightVarOperandID" value="phraseInfo"/>
                                                                 <Property name="Operator" value="&gt;"/>
                                                                 <Property name="RightVarOperandFieldID" value="count"/>
-                                                                <Property name="LeftOperandFieldID" value="count"/>
                                                                 <Property name="LeftOperandID" value="GetEnrollmentsResult"/>
+                                                                <Property name="LeftOperandFieldID" value="count"/>
                                                             </ItemProperties>
                                                             <ChildItems/>
                                                         </FlowItem>
@@ -277,8 +280,8 @@
                                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                                         <Property name="destFieldId" value="count"/>
                                                         <Property name="type" value="assign"/>
-                                                        <Property name="sourceFieldId" value="count"/>
                                                         <Property name="destVarId" value="phraseInfo"/>
+                                                        <Property name="sourceFieldId" value="count"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
@@ -287,8 +290,8 @@
                                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                                         <Property name="destFieldId" value="phrase"/>
                                                         <Property name="type" value="assign"/>
-                                                        <Property name="sourceFieldId" value="text"/>
                                                         <Property name="destVarId" value="phraseInfo"/>
+                                                        <Property name="sourceFieldId" value="text"/>
                                                     </ItemProperties>
                                                     <ChildItems/>
                                                 </FlowItem>
@@ -306,8 +309,8 @@
                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                         <Property name="destFieldId" value="count"/>
                                         <Property name="type" value="assign"/>
-                                        <Property name="destVarId" value="phraseInfo"/>
                                         <Property name="sourceFieldId" value="count"/>
+                                        <Property name="destVarId" value="phraseInfo"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -316,8 +319,8 @@
                                         <Property name="sourceVarId" value="GetEnrollmentsResult"/>
                                         <Property name="destFieldId" value="phrase"/>
                                         <Property name="type" value="assign"/>
-                                        <Property name="destVarId" value="phraseInfo"/>
                                         <Property name="sourceFieldId" value="text"/>
+                                        <Property name="destVarId" value="phraseInfo"/>
                                     </ItemProperties>
                                     <ChildItems/>
                                 </FlowItem>
@@ -327,8 +330,8 @@
                             <ItemProperties>
                                 <Property name="RightVarOperandID" value="THRESHOLD_ENROLL"/>
                                 <Property name="Operator" value="&gt;="/>
-                                <Property name="LeftOperandID" value="phraseInfo"/>
                                 <Property name="LeftOperandFieldID" value="count"/>
+                                <Property name="LeftOperandID" value="phraseInfo"/>
                             </ItemProperties>
                             <ChildItems>
                                 <FlowItem class="com.avaya.sce.callflow.internal.flowitem.Next" id="46" version="1.2">
@@ -356,18 +359,6 @@
                 <Property name="Connection.SourceObjectID" value="3"/>
                 <Property name="Connection.TargetObjectID" value="4"/>
             </NodeConnection>
-            <NodeConnection id="43" version="1.2">
-                <SourceNode id="4"/>
-                <TargetNode id="26"/>
-                <Property name="Connection.SourceObjectID" value="18"/>
-                <Property name="Connection.TargetObjectID" value="26"/>
-            </NodeConnection>
-            <NodeConnection id="49" version="1.2">
-                <SourceNode id="4"/>
-                <TargetNode id="48"/>
-                <Property name="Connection.SourceObjectID" value="19"/>
-                <Property name="Connection.TargetObjectID" value="48"/>
-            </NodeConnection>
             <NodeConnection id="55" version="1.2">
                 <SourceNode id="26"/>
                 <TargetNode id="51"/>
@@ -391,6 +382,31 @@
                 <TargetNode id="57"/>
                 <Property name="Connection.SourceObjectID" value="29"/>
                 <Property name="Connection.TargetObjectID" value="57"/>
+            </NodeConnection>
+            <NodeConnection id="75" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="26"/>
+                <Property name="Connection.SourceObjectID" value="74"/>
+                <Property name="Connection.TargetObjectID" value="26"/>
+            </NodeConnection>
+            <NodeConnection id="80" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="76"/>
+                <Property name="Connection.SourceObjectID" value="18"/>
+                <Property name="Connection.TargetObjectID" value="76"/>
+                <Bendpoint x="457" y="108"/>
+            </NodeConnection>
+            <NodeConnection id="83" version="1.2">
+                <SourceNode id="76"/>
+                <TargetNode id="48"/>
+                <Property name="Connection.SourceObjectID" value="79"/>
+                <Property name="Connection.TargetObjectID" value="48"/>
+            </NodeConnection>
+            <NodeConnection id="85" version="1.2">
+                <SourceNode id="4"/>
+                <TargetNode id="84"/>
+                <Property name="Connection.SourceObjectID" value="19"/>
+                <Property name="Connection.TargetObjectID" value="84"/>
             </NodeConnection>
         </FlowGraph>
         <ProjectEventTypes/>

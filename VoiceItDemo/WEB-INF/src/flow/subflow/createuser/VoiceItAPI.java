@@ -79,26 +79,15 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 		try {
 			actions = new java.util.ArrayList(2);
 
-			//{{START:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.user.create
-			actions.add(new com.voiceit_tech.od.api2.operations.CreateUser("CreateUserResult").setDebugId(43));
-			//}}END:CODEGEN:EXTENSIONPOINT:com.voiceit_tech.od.plugins.api2.user.create
+			//{{START:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.user.create
+			actions.add(new tech.topcat.od.voiceit.api2.operations.CreateUser("CreateUserResult").setDebugId(103));
+			//}}END:CODEGEN:EXTENSIONPOINT:tech.topcat.od.voiceit.api2.user.create
 
 			actions.add(new com.avaya.sce.runtime.tracking.TraceInfo(com.avaya.sce.runtimecommon.ITraceInfo.TRACE_LEVEL_DEBUG, "", "CreateUserResult").setDebugId(60));
 			if(evaluateActions(actions, mySession)) {
 				return true;
 			}
 			actions = null;
-
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "CreateUserResult:API_Error", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(92)).evaluate(mySession)) {
-				actions = new java.util.ArrayList(1);
-				actions.add(new com.avaya.sce.runtime.varoperations.Assign("fail(L)", "true", true).setDebugId(93));
-				if(evaluateActions(actions, mySession)) {
-					return true;
-				}
-				actions = null;
-
-			}
-
 		} catch (Exception e1) {
 			actions = new java.util.ArrayList(2);
 			actions.add(new com.avaya.sce.runtime.varoperations.CaptureException(e1).setDebugId(-1));
@@ -110,9 +99,9 @@ public class VoiceItAPI extends com.avaya.sce.runtime.Data {
 		}
 
 
-		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(54)).evaluate(mySession)) {
+		if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition1", "fail(L)", com.avaya.sce.runtime.Expression.IS_FALSE).setDebugId(54)).evaluate(mySession)) {
 
-			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition3", "CreateUserResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(52)).evaluate(mySession)) {
+			if(((com.avaya.sce.runtime.Condition)new com.avaya.sce.runtime.Condition("condition2", "CreateUserResult:IsSuccess", com.avaya.sce.runtime.Expression.IS_TRUE).setDebugId(52)).evaluate(mySession)) {
 				actions = new java.util.ArrayList(2);
 				actions.add(new com.avaya.sce.runtime.varoperations.Assign("userId", "CreateUserResult:userId", false).setDebugId(61));
 				actions.add(new com.avaya.sce.runtime.Next("createuser-SaveProfileMap", "Success").setDebugId(55));
