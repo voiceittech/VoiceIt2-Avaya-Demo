@@ -16,7 +16,7 @@ their user account from the system.
 ## Installing the plugin
 
 1. [Installing the VoiceIt&trade; Plug-in for Orchestration Designer](http://avaya.voiceit.io)
-2. Import the [VoiceItDemo](https://github.com/voiceittech/VoiceIt2-Avaya-Demo) into your workspace.
+2. Import the [VoiceItDemo](https://github.com/voiceittech/VoiceIt2-Avaya-Demo/tree/master/VoiceItDemo) into your workspace.
 
 ## Configure
 
